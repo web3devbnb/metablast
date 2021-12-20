@@ -1,0 +1,31 @@
+
+.Advisors {
+    overflow: hidden;
+    &Wrapper {
+        display: grid;
+        gap: 10%;
+        grid-template-columns: repeat(auto-fit, minmax(calc(360px - 15%), calc(400px - 15%)));
+        justify-content: center;
+        margin-bottom: 100px;
+        &Item {
+            text-align: center;
+            &Bottom {
+                margin-top: 2rem;
+                & a {
+                    text-decoration: none;
+                    font-size: 2rem;
+                    transition: all .5s ease;
+                    color: var(--color_text_white);
+                    &:hover {
+                        color: var(--color_primary);
+                    }
+                }
+                & p {
+                    color: var(--color_primary);
+                }
+                width: 120%;
+                margin-left: -10%;
+            }
+        }
+    }
+}

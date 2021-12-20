@@ -1,0 +1,87 @@
+
+.tokenomics {
+    overflow: hidden;
+    &Wrapper {
+        display: flex;
+        align-items: center;
+        &Img {
+            width: 50%;
+            display: inline-block;
+        }
+        &Content {
+            width: 50%;
+            display: inline-block;
+            color: var(--color_text_white);
+            padding: 8%;
+            &Title {
+                font-size: 4rem;
+                font-weight: 800;
+                & span {
+                    color: var(--color_primary);
+                }
+            }
+            & p {
+                font-weight: 600;
+                color: var(--color_text_white);
+                margin-bottom: 15px;
+                & span {
+                    color: var(--color_primary);
+                }
+            }
+            &List {
+                margin-bottom: 50px;
+                & li span:first-child {
+                    display: inline-block;
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1300px) {
+    .tokenomics {
+        &Wrapper {
+            &Content {
+                &Title {
+                font-size: 3rem;
+                }
+            }
+        }
+    }
+    .button{
+        padding: 15px 40px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .tokenomics {
+        &Wrapper {
+            &Content {
+                &Title {
+                font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 850px) {
+    .tokenomics {
+        &Wrapper {
+            flex-direction:column;
+            &Content {
+                width: 70%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .tokenomics {
+        &Wrapper {
+            &Img {
+                width: 100%;
+            }
+            &Content {
+                width: 100%;
+            }
+        }
+    }
+}

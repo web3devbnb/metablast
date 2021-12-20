@@ -1,0 +1,12 @@
+import Vidwrapper from './vidwrapper'
+import About from './about'
+import Features from './features'
+import Character from './character'
+import Basecamp from './basecamp'
+import Roadmap from './roadmap'
+import Tokenomics from './tokenomics'
+import Communities from './communities'
+import Partners from './partners'
+import Investors from './investors'
+import Advisors from './Advisors'
+export  {Vidwrapper,About,Features,Character,Basecamp,Roadmap,Tokenomics,Communities,Partners,Investors,Advisors}
