@@ -1,0 +1,19 @@
+.Vidwrapper{
+    & img{
+        display: none;
+    }
+    & video{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Vidwrapper{
+        & img{
+            display: block;
+        }
+        & video{
+            display: none;
+        }
+    }
+}

@@ -6,7 +6,6 @@ import style from './header.module.scss'
 function Header(){
     const [show,setShow] = useState(false)
     const [showMB,setShowMB] = useState(false)
-    const [width,setWidth] = useState(false)
     
     useEffect(()=>{
         const handleScroll = () =>{
@@ -19,7 +18,6 @@ function Header(){
 
     useEffect(()=>{
         const handleResize = ()=>{
-            setWidth(window.innerWidth<1000)
             if(window.innerWidth>1000)
             setShowMB(false)
         }

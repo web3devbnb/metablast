@@ -1,7 +1,7 @@
 import urlImg1 from '../../media/game_gallery_02.94e6dc69.png'
-import urlRM1 from '../../media/phase_1.d669a054.png'
-import urlRM2 from '../../media/phase_2.043b55ac.png'
-import urlRM3 from '../../media/phase_3.153fe3fd.png'
+// import urlRM1 from '../../media/phase_1.d669a054.png'
+// import urlRM2 from '../../media/phase_2.043b55ac.png'
+// import urlRM3 from '../../media/phase_3.153fe3fd.png'
 import style from './roadmap.module.scss'
 
 function Roadmap(){

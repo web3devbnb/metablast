@@ -9,6 +9,27 @@ import style from "./character.module.scss"
 import "../../../node_modules/slick-carousel/slick/slick.css"; 
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none"}}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none"}}
+      onClick={onClick}
+    />
+  );
+}
 export default class AsNavFor extends Component {
   constructor(props) {
     super(props);
@@ -26,6 +47,11 @@ export default class AsNavFor extends Component {
   }
 
   render() {
+    const settings = {
+     
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />
+    };
     return (
       <section className={style.character}>
         <h2>Slider Syncing (AsNavFor)</h2>
@@ -34,6 +60,7 @@ export default class AsNavFor extends Component {
         <Slider
           asNavFor={this.state.nav2}
           ref={slider => (this.slider1 = slider)}
+          {...settings}
         >
             <div className={style.characterSecondSlider}>
                 <div className={style.characterSecondSliderTitle}>
@@ -105,6 +132,7 @@ export default class AsNavFor extends Component {
           focusOnSelect={true}
           variableWidth= {true}
           className={style.characterFirstSlider}
+          {...settings}
         >
           <div style={{width:'5.2%'}}>
                 <img src={url1} alt=""/>
