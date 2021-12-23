@@ -11,6 +11,7 @@
     .Vidwrapper{
         & img{
             display: block;
+            content: url(../../media/metagunner_banner_500.png);
         }
         & video{
             display: none;

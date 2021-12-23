@@ -7,10 +7,10 @@
     &FirstSlider{
         // width: 100px !important;
         // height: 100px !important;
-        width: 50%;
+        width: 60%;
         margin: auto;
         &Item{
-        width: 5.15% !important;
+            width: 5.15% !important;
         }
     }
     &SecondSlider{
@@ -26,6 +26,9 @@
             // display: inline-block;
             width: 50% !important;
             height: 50% !important;
+            & h2{
+                margin-bottom: 15px;
+            }
         }
     }
 }
