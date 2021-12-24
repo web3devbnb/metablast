@@ -1,20 +1,35 @@
 .Vidwrapper{
-    & img{
-        display: none;
+    overflow: hidden;
+    position: relative;
+    & .banner_PC{
+        position: relative;
+        height: 50vw;
+        & img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+        }
     }
-    & video{
-        display: block;
+    & .banner_MB{
+        display: none;
     }
 }
 
+
 @media screen and (max-width: 600px) {
+    
     .Vidwrapper{
-        & img{
-            display: block;
-            content: url(../../media/metagunner_banner_500.png);
-        }
-        & video{
+        & .banner_PC{
             display: none;
+            & img{
+                display: block;
+            }
         }
+        & .banner_MB{
+            display: block;
+            width: 100%;
+        }
+
     }
 }
