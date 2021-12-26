@@ -1,8 +1,17 @@
 .features {
+    background-image: url(../../media/bg_features.png);
+    object-fit: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    & h1{
+        font-size: 3rem;
+    }
     &Title {
         font-size: 3rem;
         color: white;
         margin-bottom: 3rem;
+        text-align: center;
+        padding-top: 35px;
         & h2>span {
             color: var(--color_primary);
         }
@@ -10,16 +19,19 @@
     &Wrapper {
         display: grid;
         gap: 3%;
-        grid-template-columns: repeat(auto-fit, minmax(calc(360px - 3%), calc(400px - 3%)));
+        grid-template-columns: repeat(auto-fit, minmax(calc(400px - 3%), calc(800px - 3%)));
         justify-content: center;
-        margin-bottom: 10%;
+        // margin-bottom: 10%;
     }
 }
 
 .featureCard {
+    display: flex;
+    align-items:center;
+    padding-bottom: 50px;
     &Top {
         text-align: center;
-        background:  var(--color_primary);
+        // background:  var(--color_primary);
         &Title {
             font-size: 1.5rem;
             color: var(--color_text_white);
@@ -45,13 +57,13 @@
         }
         &Img {
             & img {
-                width: 270px;
+                width: 420px;
                 margin: 30px;
             }
         }
     }
     &Bottom {
-        border: 8px solid var(--color_primary);
+        // border: 8px solid var(--color_primary);
         border-top-width: 0;
         &Title {
             padding: 37px 0 17px;
@@ -69,9 +81,8 @@
             & p {
                 color: var(--color_text_white);
                 font-size: 1rem;
-                text-align: center;
+                text-align: justify;
                 font-weight: 700;
-                padding-bottom: 1rem;
             }
         }
     }

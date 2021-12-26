@@ -1,3 +1,11 @@
+import urlvideo1 from "../../media/0001.mp4"
+import urlvideo2 from "../../media/0002.mp4"
+import urlvideo3 from "../../media/0003.mp4"
+import urlvideo4 from "../../media/0004.mp4"
+import urlvideo5 from "../../media/0005.mp4"
+import urlvideo6 from "../../media/0006.mp4"
+import urlvideo7 from "../../media/0007.mp4"
+// import urlgif from "../../media/1-unscreen.gif"
 import url1 from "../../media/1.png"
 import url2 from "../../media/2.png"
 import url3 from "../../media/3.png"
@@ -47,71 +55,77 @@ export default class AsNavFor extends Component {
   }
 
   render() {
-    const settings = {
+    const settings1 = {
+      infinite:false,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />
+    };
+    const settings2 = {
+      slidesToShow: 7,
+      infinite:false,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />
     };
     return (
       <section className={style.character}>
-        <h2>Slider Syncing (AsNavFor)</h2>
-      
-        <h4>First Slider</h4>
+        <div className={style.charactertitle}>
+        <h1>CHARACTER</h1>
+        </div>
         <Slider
           asNavFor={this.state.nav2}
           ref={slider => (this.slider1 = slider)}
-          {...settings}
+          {...settings1}
         >
-            <div className={style.characterSecondSlider}>
-                <div className={style.characterSecondSliderTitle}>
-                    <h2>Gunner</h2>
-                    <span>A well-trained Navy SEAL that can improvise, adapt, and overcome any situations.</span>
-                </div>
-                <img src={url1} alt=""/>
-          </div>
           <div className={style.characterSecondSlider}>
                 <div className={style.characterSecondSliderTitle}>
-                    <h2>Destroyer</h2>
-                    <span>The Destroyer is a heavy-built six-foot tall man who loves big guns and explosives. His enemies may outrun him, but they cannot outrun his grenades.</span>
+                    <h2>Scout</h2>
+                    <span>The scout is an expert on gathering information on the enemy lands. He is a master of army-styled ninjutsu who always come with a plan and always leave a place with many dead bodies</span>
                 </div>
-                <img src={url2} alt=""/>
-          </div>
-          <div className={style.characterSecondSlider}>
-                <div className={style.characterSecondSliderTitle}>
-                    <h2>Officer</h2>
-                    <span>A respectful but ruthless soldier that hold a record of bring 21 terrorists to justice by himself.</span>
-                </div>
-                <img src={url3} alt=""/>
+                <video src={urlvideo1} autoplay='autoplay' muted='muted' loop='loop'></video>
           </div>
           <div className={style.characterSecondSlider}>
                 <div className={style.characterSecondSliderTitle}>
                     <h2>Sniper</h2>
-                    <span>He is rumored to be a ghost. No one has ever seen him, and no one wants to be his enemy because you will never know when he's gonna get you.</span>
+                    <span>He is rumored to be a ghost. No one has ever seen him, and no one wants to be his enemy because you will never know when he's gonna get you. His targets never survive, but the witnesses said there was a whistle before the kill.</span>
                 </div>
-                <img src={url4} alt=""/>
+                <video src={urlvideo3} autoplay='autoplay' muted='muted' loop='loop'></video>
           </div>
           <div className={style.characterSecondSlider}>
                 <div className={style.characterSecondSliderTitle}>
                     <h2>Special Force</h2>
-                    <span>An elite trooper specializes in large-scale tasks and always complete them thoroughly. He can deliver every methods that you can possibly think of to kill a man.</span>
+                    <span>An elite trooper specializes in large-scale tasks and always complete them thoroughly. He can deliver every methods that you can possibly think of to kill a man</span>
                 </div>
-                <img src={url5} alt=""/>
+                <video src={urlvideo4} autoplay='autoplay' muted='muted' loop='loop'></video>
+          </div>
+          <div className={style.characterSecondSlider}>
+                <div className={style.characterSecondSliderTitle}>
+                <h2>Destroyer</h2>
+                    <span>The Destroyer is a heavy-built six-foot tall man who loves big guns and explosives. His enemies may outrun him, but they cannot outrun his grenades</span>
+                </div>
+                <video src={urlvideo5} autoplay='autoplay' muted='muted' loop='loop'></video>
+          </div>
+          <div className={style.characterSecondSlider}>
+                <div className={style.characterSecondSliderTitle}>
+                    <h2>Gunner</h2>
+                    <span>A well-trained Navy SEAL that can improvise, adapt, and overcome any situations. He is a real weapon-savvy and can make the most of everything around him to finish a job</span>
+                </div>
+                <video src={urlvideo6} autoplay='autoplay' muted='muted' loop='loop'></video>
           </div>
           <div className={style.characterSecondSlider}>
                 <div className={style.characterSecondSliderTitle}>
                     <h2>Medic</h2>
-                    <span>He is an extremely experienced battlefield doctor, but do not make the mistake of underestimate his skills.</span>
+                    <span>He is an extremely experienced battlefield doctor, but do not make the mistake of underestimate his skills. He brings people back from the brink of death, yet he also does a perfect job of sending one to hell.</span>
                 </div>
-                <img src={url5} alt=""/>
+                <video src={urlvideo7} autoplay='autoplay' muted='muted' loop='loop'></video>
           </div>
           <div className={style.characterSecondSlider}>
                 <div className={style.characterSecondSliderTitle}>
-                    <h2>Scout</h2>
-                    <span>The scout is an expert on gathering information on the enemy lands. He is a master of army-styled ninjutsu who always come with a plan and always leave a place with many dead bodies.</span>
+                    <h2>Officer</h2>
+                    <span>A respectful but ruthless soldier that hold a record of bring 21 terrorists to justice by himself</span>
                 </div>
-                <img src={url5} alt=""/>
+                <video src={urlvideo2} autoplay='autoplay' muted='muted' loop='loop'></video>
           </div>
         </Slider>
-        <h4>Second Slider</h4>
         <Slider
           asNavFor={this.state.nav1}
           ref={slider => (this.slider2 = slider)}
@@ -120,27 +134,28 @@ export default class AsNavFor extends Component {
           focusOnSelect={true}
           variableWidth= {true}
           className={style.characterFirstSlider}
-          {...settings}
+          {...settings2}
         >
-          <div style={{width:'2.75%'}}>
+          <div style={{width:'calc(100% / 7 )'}}>
                 <img src={url1} alt=""/>
+               {/* <video src={urlvideo} autoplay='autoplay' muted='muted' loop='loop'></video> */}
           </div>
-          <div style={{width:'2.75%'}}>
+          <div style={{width:'calc(100% / 7 )'}}>
                 <img src={url2} alt=""/>
           </div>
-          <div style={{width:'2.75%'}}>
+          <div style={{width:'calc(100% / 7 )'}}>
                 <img src={url3} alt=""/>
           </div>
-          <div style={{width:'2.75%'}}>
+          <div style={{width:'calc(100% / 7 )'}}>
                 <img src={url4} alt=""/>
           </div>
-          <div style={{width:'2.75%'}}>
+          <div style={{width:'calc(100% / 7 )'}}>
                 <img src={url5} alt=""/>
           </div>
-          <div style={{width:'2.75%'}}>
+          <div style={{width:'calc(100% / 7 )'}}>
                 <img src={url5} alt=""/>
           </div>
-          <div style={{width:'2.75%'}}>
+          <div style={{width:'calc(100% / 7 )'}}>
                 <img src={url5} alt=""/>
           </div>
         </Slider>
