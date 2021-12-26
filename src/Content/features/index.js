@@ -59,8 +59,7 @@ function Features(){
                     </div>
                     <div className={style.featureCard} data-aos="fade-right" data-aos-once="true" data-aos-delay="900" data-aos-duration="500">
                         <div className={style.featureCardTop}>
-                            <div className={style.featureCardTopTitle}>SHOWROOM</div>
-                            <div className={style.featureCardTopImg}><img src={urlImg} alt="SHOWROOM"/></div>
+                            <div className={style.featureCardTopImg}><img src={urlImgUpgrade} alt="SHOWROOM"/></div>
                         </div>
                         <div className={style.featureCardBottom}>
                             <div className={style.featureCardBottomTitle}>
