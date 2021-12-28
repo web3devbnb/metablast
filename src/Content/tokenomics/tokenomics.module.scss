@@ -1,25 +1,46 @@
 
 .tokenomics {
     overflow: hidden;
+    background-image: url(../../media/bg_features.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: -5px;
     &Wrapper {
+        position: relative;
+        font-size: 1.5rem;
         display: flex;
         align-items: center;
+        margin-top: 10%;
         &Img {
             width: 50%;
             display: inline-block;
+            & img{
+                width: 150%;
+                margin-left: -25%;
+            }
+        }
+        &Title{
+            position: absolute;
+            left: 50%;
+            width: 26%;
+            transform: translate(-50%,0);
+            z-index: 1;
+            top:-20%;
         }
         &Content {
             width: 50%;
             display: inline-block;
             color: var(--color_text_white);
             padding: 8%;
-            &Title {
-                font-size: 4rem;
-                font-weight: 800;
-                & span {
-                    color: var(--color_primary);
-                }
-            }
+            // &Title {
+            //     font-size: 4rem;
+            //     font-weight: 800;
+            //     & span {
+            //         color: var(--color_primary);
+            //     }
+            // }
             & p {
                 font-weight: 600;
                 color: var(--color_text_white);
@@ -38,13 +59,22 @@
         }
     }
 }
+@media screen and (max-width: 1500px) {
+    .tokenomicsWrapperImg img{
+                    width: 120%;
+                    margin-left: -10%;
+                }
+}
 @media screen and (max-width: 1300px) {
     .tokenomics {
         &Wrapper {
             &Content {
-                &Title {
-                font-size: 3rem;
-                }
+                padding-left: 0;
+                font-size: 1.2rem;
+            }
+            &Img img{
+                width: 100%;
+                margin-left: 0;
             }
         }
     }
@@ -70,6 +100,12 @@
             &Content {
                 width: 70%;
             }
+            &Title {
+                top: -10%;
+            }
+            &Img {
+                width: 80%;
+            }
         }
     }
 }
@@ -79,8 +115,18 @@
             &Img {
                 width: 100%;
             }
+            &Title {
+                top: -5%;
+            }
             &Content {
                 width: 100%;
+                padding: 10%;
+                &List {
+                    margin-bottom: 0;
+                    & li span:first-child {
+                        width: 70%;
+                    }
+                }
             }
         }
     }

@@ -1,12 +1,18 @@
 import urlImg1 from '../../media/game_gallery_02.94e6dc69.png'
-// import urlRM1 from '../../media/phase_1.d669a054.png'
+import urlTitle from '../../media/Roadmap.png'
 // import urlRM2 from '../../media/phase_2.043b55ac.png'
 // import urlRM3 from '../../media/phase_3.153fe3fd.png'
 import style from './roadmap.module.scss'
+import clsx from 'clsx'
 
 function Roadmap(){
     return(
         <section className={style.roadmap} id='roadmap'>
+            <div className={clsx('container',style.roadmapContainer)}>
+                <div className={style.roadmapTitle}>
+                <img src={urlTitle} alt=""/>
+                </div>
+            </div>
         <img src={urlImg1} alt=""/>
         {/* <div className="container">
             <h2 className={style.title} data-aos="fade-up">Road<span>Map</span></h2>

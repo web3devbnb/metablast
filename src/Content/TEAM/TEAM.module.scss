@@ -1,6 +1,11 @@
 
 .Advisors {
     overflow: hidden;
+    &Title{
+        width: 26%;
+        margin: auto;
+        margin-bottom: 4%;
+    }
     &Wrapper {
         display: grid;
         gap: 10%;

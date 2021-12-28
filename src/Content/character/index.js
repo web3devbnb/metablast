@@ -15,7 +15,7 @@ import url5 from "../../media/Picture1.png"
 import url6 from "../../media/Medic.png"
 import url7 from "../../media/Officer.png"
 import urlCHARACTER from "../../media/CHARACTER.png"
-
+import clsx from "clsx"
 import React, { Component } from "react";
 import Slider from "react-slick";
 import style from "./character.module.scss"
@@ -27,7 +27,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{content:'!important', position: 'absolute',top: '50%',right: 0,width: '11%',height: '8%'}}
+      style={{position: 'absolute',top: '50%',right: 0,width: '11%',height: '100%'}}
       onClick={onClick}
     />
   );
@@ -38,7 +38,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{position: 'absolute',top: '50%',left: 0,zIndex:1,width: '11%',height: '8%'}}
+      style={{position: 'absolute',top: '50%',left: 0,zIndex:1,width: '11%',height: '100%'}}
       onClick={onClick}
     />
   );
@@ -73,10 +73,10 @@ export default class AsNavFor extends Component {
     };
     return (
       <section className={style.character} id="character">
-            <div className='container'>
-        <div className={style.charactertitle}>
-        <img src={urlCHARACTER} alt=""/>
-        </div>
+        <div className={clsx('container',style.characterContainer)}>
+          <div className={style.charactertitle}>
+            <img src={urlCHARACTER} alt=""/>
+          </div>
         </div>
         <Slider
           asNavFor={this.state.nav2}

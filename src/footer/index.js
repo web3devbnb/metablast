@@ -13,20 +13,20 @@ function Footer(){
         <div className="container">
             <div className={style.footerWrapper}>
                 <img src={imgLogo} alt=""/>
-                <p>The first Racing Game on BSC Deathroad aims to become a comprehensive gaming ecosystem built for next generation racers, who utilize racing skills to enjoy the real racing expericence and to earn tradable valuable digital assets.</p>
+                {/* <p>The first Racing Game on BSC Deathroad aims to become a comprehensive gaming ecosystem built for next generation racers, who utilize racing skills to enjoy the real racing expericence and to earn tradable valuable digital assets.</p> */}
                 <div className={style.footerWrapperSocial}>
                     <a href="/" target="_blank" rel="noopener noreferrer"><img src={imgTelegram} alt=""/></a>
-                    <a href="/" target="_blank" rel="noopener noreferrer"><img src={imgDiscord} alt=""/></a>
-                    <a href="/" target="_blank" rel="noopener noreferrer"><img src={imgTwitter} alt=""/></a>
+                    <a href="https://discord.gg/ukW2Udas9f" target="_blank" rel="noopener noreferrer"><img src={imgDiscord} alt=""/></a>
+                    <a href="https://twitter.com/MetaGunner_io" target="_blank" rel="noopener noreferrer"><img src={imgTwitter} alt=""/></a>
                     <a href="/" target="_blank" rel="noopener noreferrer"><img src={imgGithub} alt=""/></a> 
-                    <a href="/" target="_blank" rel="noopener noreferrer"><img src={imgMedium} alt=""/></a>
+                    <a href="metagunner.medium.com" target="_blank" rel="noopener noreferrer"><img src={imgMedium} alt=""/></a>
                 </div>
                 <ul className={style.footerWrapperNav}>
                     <li>Launch APP</li>
                     <li>Marketplace</li>
                     <li>How to play</li>
                 </ul>
-                <p className={style.copyright}>Copyright © 2021 Death Road All rights reserved.</p>
+                <p className={style.copyright}>Copyright © 2021 Meta Gunner All rights reserved.</p>
             </div>
         </div>
     </footer>

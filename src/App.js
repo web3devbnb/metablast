@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './header'
-import {Vidwrapper,About,Features,Character,Basecamp,Roadmap,Tokenomics,Communities,Partners,Investors,Advisors} from './Content'
+import {Vidwrapper,About,Features,Character,Basecamp,Roadmap,Tokenomics,Communities,Partners,Investors,TEAM} from './Content'
 import Footer from './footer'
 import GlobalStyles from './GlobalStyles'
 
@@ -18,7 +18,7 @@ function App() {
           {/* <Communities/> */}
           {/* <Partners/> */}
           {/* <Investors/>- */}
-          <Advisors/>
+          <TEAM/>
           <Footer/>
     </GlobalStyles>
   );

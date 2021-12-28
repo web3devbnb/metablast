@@ -8,5 +8,5 @@ import Tokenomics from './tokenomics'
 import Communities from './communities'
 import Partners from './partners'
 import Investors from './investors'
-import Advisors from './Advisors'
-export  {Vidwrapper,About,Features,Character,Basecamp,Roadmap,Tokenomics,Communities,Partners,Investors,Advisors}
+import TEAM from './TEAM'
+export  {Vidwrapper,About,Features,Character,Basecamp,Roadmap,Tokenomics,Communities,Partners,Investors,TEAM}

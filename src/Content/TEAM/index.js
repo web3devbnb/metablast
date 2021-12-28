@@ -1,14 +1,17 @@
 import Kieran from '../../media/Kieran.1d6b5da2.png'
 import Santiago from '../../media/Santiago.e03921dd.png'
-import Stani from '../../media/Stani.851904b5.png'
+import urlTitle from '../../media/Team.png'
 
-import style from './Advisors.module.scss'
+import style from './TEAM.module.scss'
 
 function Advisors(){
     return(
-        <section className={style.Advisors} id='advisors'>
+        <section className={style.Advisors} id='TEAM'>
             <div className="container">
-                <h2 className="title" data-aos="fade-up">Our <span>Advisors</span></h2>
+                <div className={style.AdvisorsTitle}>
+                    <img src={urlTitle} alt=""/>
+                </div>
+                {/* <h2 className="title" data-aos="fade-up">Our <span>TEAM</span></h2> */}
                 <div className={style.AdvisorsWrapper}>
                     <div className={style.AdvisorsWrapperItem} data-aos="zoom-in-up" data-aos-delay="200">
                         <div className={style.AdvisorsWrapperItemTop}>
@@ -34,7 +37,7 @@ function Advisors(){
                     </div>
                     <div className={style.AdvisorsWrapperItem} data-aos="zoom-in-up" data-aos-delay="600">
                         <div className={style.AdvisorsWrapperItemTop}>
-                            <img src={Stani} alt=""/>
+                            <img src={Kieran} alt=""/>
                         </div>
                         <div className={style.AdvisorsWrapperItemBottom}>
                             <a className={style.title} href="">

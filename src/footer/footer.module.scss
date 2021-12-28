@@ -16,11 +16,13 @@
             color: var(--color_text_white);
             margin-bottom: 40px;
         }
-        &Social img {
+        &Social{ 
+            margin-bottom: 20px;
+            & img {
             width: 2vw;
             height: 2vw;
-            margin-bottom: 20px;
-        }
+            margin: 10px;
+        }}
         &Nav {
             display: flex;
             justify-content: space-around;
@@ -48,6 +50,23 @@
             & li:hover::after {
                 right: -20px;
             }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .footerWrapperSocial{ 
+                & img {
+                width: 4vw;
+                height: 4vw;
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .footerWrapperSocial{ 
+                & img {
+                width: 7vw;
+                height: 7vw;
         }
     }
 }

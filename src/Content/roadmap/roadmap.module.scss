@@ -1,63 +1,79 @@
 
-.roadmap {
-    & .container {
-        position: relative;
-        & .title {
-            position: absolute;
-            top: -10%;
-        }
+// .roadmap {
+//     & .container {
+//         position: relative;
+//         & .title {
+//             position: absolute;
+//             top: -10%;
+//         }
+//     }
+//     &Wrapper {
+//         margin-top: -35%;
+//         display: grid;
+//         gap: 7%;
+//         grid-template-columns: repeat(auto-fit, calc(400px - 5%));
+//         justify-content: center;
+//         & .roadmapItem {
+//             &:first-child .roadmapItemTop {
+//                 height: 370px;
+//                 position: relative;
+//                 & img {
+//                     position: absolute;
+//                     bottom: 0;
+//                     width: 80%;
+//                     height: auto;
+//                     margin: 0 auto;
+//                 }
+//             }
+//             &:nth-child(2) .roadmapItemTop {
+//                 height: 370px;
+//                 position: relative;
+//                 & img {
+//                     position: absolute;
+//                     bottom: 0;
+//                     width: 100%;
+//                     height: auto;
+//                 }
+//             }
+//             &:last-child .roadmapItemTop {
+//                 width: 110%;
+//             }
+//             &Bottom {
+//                 & .roadmapItemDot {
+//                     height: 35px;
+//                     width: 35px;
+//                     background-color: orangered;
+//                     border-radius: 50%;
+//                     margin: 8% 0 0 20%;
+//                 }
+//                 & .roadmapItemTitle {
+//                     font-size: 1.5rem;
+//                     font-weight: 800;
+//                     color: var(--color_primary);
+//                 }
+//                 & .roadmapItemContent {
+//                     color: var(--color_text_white);
+//                     font-weight: 600;
+//                     font-size: 0.9rem;
+//                     line-height: 1.5;
+//                 }
+//             }
+//         }
+//     }
+// }
+.roadmap{
+    margin-top: -5px;
+    &Container{
+        position: absolute;
+        left: 50%;
+        height: 20% !important;
+        transform: translate(-50%,0);
+        z-index: 1;
     }
-    &Wrapper {
-        margin-top: -35%;
-        display: grid;
-        gap: 7%;
-        grid-template-columns: repeat(auto-fit, calc(400px - 5%));
-        justify-content: center;
-        & .roadmapItem {
-            &:first-child .roadmapItemTop {
-                height: 370px;
-                position: relative;
-                & img {
-                    position: absolute;
-                    bottom: 0;
-                    width: 80%;
-                    height: auto;
-                    margin: 0 auto;
-                }
-            }
-            &:nth-child(2) .roadmapItemTop {
-                height: 370px;
-                position: relative;
-                & img {
-                    position: absolute;
-                    bottom: 0;
-                    width: 100%;
-                    height: auto;
-                }
-            }
-            &:last-child .roadmapItemTop {
-                width: 110%;
-            }
-            &Bottom {
-                & .roadmapItemDot {
-                    height: 35px;
-                    width: 35px;
-                    background-color: orangered;
-                    border-radius: 50%;
-                    margin: 8% 0 0 20%;
-                }
-                & .roadmapItemTitle {
-                    font-size: 1.5rem;
-                    font-weight: 800;
-                    color: var(--color_primary);
-                }
-                & .roadmapItemContent {
-                    color: var(--color_text_white);
-                    font-weight: 600;
-                    font-size: 0.9rem;
-                    line-height: 1.5;
-                }
-            }
-        }
+    &Title{
+        position: absolute;
+        width: 26%;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 }

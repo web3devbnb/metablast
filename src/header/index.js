@@ -1,5 +1,6 @@
 import { useEffect,useState } from 'react'
 import clsx from 'clsx'
+import urlBtn from '../media/orange_button.png'
 import urlLogo from '../media/Logo.png'
 import style from './header.module.scss'
 
@@ -29,31 +30,43 @@ function Header(){
         }
 
     })
-
-    
+    useEffect(()=>{
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+                document.getElementById("navbarContainer").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+                document.getElementById("navbarContainer").style.top = "-100px";
+            }
+        prevScrollpos = currentScrollPos;
+        }
+    })
 
     return(
     <>
-        <header className={clsx(style.header,{[style.headerDown]:show})}>
-        <div className={clsx(style.headerContainer,{[style.headerContainerDown]:show})}>
+        <header className={clsx(style.header,{[style.headerDown]:show})} id='navbar'>
+        <div className={clsx(style.headerContainer,{[style.headerContainerDown]:show})} id='navbarContainer'>
             <div className={style.headerContainerLogo}>
                 <img src={urlLogo} alt="logo"/>
             </div>
             <div className={clsx(style.headerContainerMenu,{[style.display_block]:showMB})}>
                 <nav>
                     <ul className={clsx(style.mainMenu,{[style.responsive]:showMB})} id="myTopnav">
-                        <li><a href="#features" className={style.active}>FEATURES</a></li>
+                        <li><a href="#features">FEATURES</a></li>
                         <li><a href="#character">CHARACTER</a></li>
                         <li><a href="#roadmap">ROADMAP</a></li>
                         <li><a href="#tokenomics">TOKENOMICS</a></li>
-                        <li><a href="#advisors">TEAM</a></li>
-                        <li><a href="https://whitepaper.metagunner.io/" target="_blank">Whitepaper</a></li>
+                        <li><a href="#TEAM">TEAM</a></li>
+                        <li><a href="https://whitepaper.metagunner.io/" target="_blank">WHITEPAPER</a></li>
                     </ul>
                 </nav>
             </div>
             <button className={style.menu_mobile_icon} onClick={()=>setShowMB(!showMB)} >
-                        <img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48bGluZWFyR3JhZGllbnQgaWQ9IkVJUGMwcVROQ1gwRXVqWXd0eEthWGFfTW11cFp0UGJudzY2X2dyMSIgeDE9IjEyLjA2NiIgeDI9IjM0Ljg5MSIgeTE9Ii4wNjYiIHkyPSIyMi44OTEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9Ii4yMzciIHN0b3AtY29sb3I9IiMzYmM5ZjMiPjwvc3RvcD48c3RvcCBvZmZzZXQ9Ii44NSIgc3RvcC1jb2xvcj0iIzE1OTFkOCI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZmlsbD0idXJsKCNFSVBjMHFUTkNYMEV1all3dHhLYVhhX01tdXBadFBibnc2Nl9ncjEpIiBkPSJNNDMsMTVINWMtMS4xLDAtMi0wLjktMi0ydi0yYzAtMS4xLDAuOS0yLDItMmgzOGMxLjEsMCwyLDAuOSwyLDJ2MkM0NSwxNC4xLDQ0LjEsMTUsNDMsMTV6Ij48L3BhdGg+PGxpbmVhckdyYWRpZW50IGlkPSJFSVBjMHFUTkNYMEV1all3dHhLYVhiX01tdXBadFBibnc2Nl9ncjIiIHgxPSIxMi4wNjYiIHgyPSIzNC44OTEiIHkxPSIxMi4wNjYiIHkyPSIzNC44OTEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9Ii4yMzciIHN0b3AtY29sb3I9IiMzYmM5ZjMiPjwvc3RvcD48c3RvcCBvZmZzZXQ9Ii44NSIgc3RvcC1jb2xvcj0iIzE1OTFkOCI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZmlsbD0idXJsKCNFSVBjMHFUTkNYMEV1all3dHhLYVhiX01tdXBadFBibnc2Nl9ncjIpIiBkPSJNNDMsMjdINWMtMS4xLDAtMi0wLjktMi0ydi0yYzAtMS4xLDAuOS0yLDItMmgzOGMxLjEsMCwyLDAuOSwyLDJ2MkM0NSwyNi4xLDQ0LjEsMjcsNDMsMjd6Ij48L3BhdGg+PGxpbmVhckdyYWRpZW50IGlkPSJFSVBjMHFUTkNYMEV1all3dHhLYVhjX01tdXBadFBibnc2Nl9ncjMiIHgxPSIxMi4wNjYiIHgyPSIzNC44OTEiIHkxPSIyNC4wNjYiIHkyPSI0Ni44OTEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9Ii4yMzciIHN0b3AtY29sb3I9IiMzYmM5ZjMiPjwvc3RvcD48c3RvcCBvZmZzZXQ9Ii44NSIgc3RvcC1jb2xvcj0iIzE1OTFkOCI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZmlsbD0idXJsKCNFSVBjMHFUTkNYMEV1all3dHhLYVhjX01tdXBadFBibnc2Nl9ncjMpIiBkPSJNNDMsMzlINWMtMS4xLDAtMi0wLjktMi0ydi0yYzAtMS4xLDAuOS0yLDItMmgzOGMxLjEsMCwyLDAuOSwyLDJ2MkM0NSwzOC4xLDQ0LjEsMzksNDMsMzl6Ij48L3BhdGg+PC9zdmc+"/>
-                        </button>
+                <img src={urlBtn} alt=""/>
+            </button>
         </div>
     </header>
     </>

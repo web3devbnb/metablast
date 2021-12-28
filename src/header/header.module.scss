@@ -1,4 +1,9 @@
-
+#navbar{
+    
+}
+#navbarContainer{
+    transition: top 1s;
+}
 .header {
     width: 100%;
     height: 135px;
@@ -7,12 +12,14 @@
     position: fixed;
     top: 0;
     z-index: 10;
+    transition: top 1s;
     &Down {
         height: 70px;
         background-color: var(--color_black_down);
         box-shadow: 0 1px 10px var(--color_primary);
     }
     &Container {
+        transition: top 1s;
         &Logo{
             margin-top: -20px;
             & img{
@@ -91,6 +98,10 @@
     top: 10px;
     background: none;
     display: none;
+    & img{
+        width: 45px;
+        height: 45px;
+    }
 }
 .display_block{
     display: block !important;
