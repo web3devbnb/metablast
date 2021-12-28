@@ -30,6 +30,7 @@
     &Top {
         text-align: center;
         width: 50%;
+        box-shadow: 10px 10px 10px var(--color_primary);
         // background:  var(--color_primary);
         &Title {
             font-size: 1.5rem;
@@ -56,6 +57,7 @@
         }
         &Img {
             & img {
+                margin-bottom: -4px;
                 // margin: 30px;
                 // margin-top: 40px;
             }

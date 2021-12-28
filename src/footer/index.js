@@ -21,11 +21,11 @@ function Footer(){
                     <a href="/" target="_blank" rel="noopener noreferrer"><img src={imgGithub} alt=""/></a> 
                     <a href="metagunner.medium.com" target="_blank" rel="noopener noreferrer"><img src={imgMedium} alt=""/></a>
                 </div>
-                <ul className={style.footerWrapperNav}>
+                {/* <ul className={style.footerWrapperNav}>
                     <li>Launch APP</li>
                     <li>Marketplace</li>
                     <li>How to play</li>
-                </ul>
+                </ul> */}
                 <p className={style.copyright}>Copyright © 2021 Meta Gunner All rights reserved.</p>
             </div>
         </div>

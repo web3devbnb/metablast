@@ -1,6 +1,11 @@
 
 .Advisors {
     overflow: hidden;
+    background-image: url(../../media/bg_features2.jpg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     &Title{
         width: 26%;
         margin: auto;

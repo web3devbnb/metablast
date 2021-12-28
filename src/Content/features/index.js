@@ -24,7 +24,7 @@ Players embark on exciting adventures and play as soldiers armed with weapons to
                             </div>
                         </div>
                         <div className={style.featureCardTop}>
-                            <img src={urlImgCam} alt="SHOWROOM"/>
+                        <div className={style.featureCardTopImg}><img src={urlImgCam} alt="SHOWROOM"/></div>
                         </div>
                         
                     </div>
