@@ -3,8 +3,9 @@
     background-image: url(../../media/banner-9.png);
     background-position: center right;
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    margin-top: -40px;
+    margin-top: -50px;
     & .container {
         max-width: 1600px !important;
         display: flex;
@@ -38,6 +39,12 @@
 }
 
 
+@media screen and (max-width: 1450px) {
+    .aboutWrapper {
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .aboutWrapper{
         width: 100%;
@@ -69,6 +76,13 @@
     }
 }
 @media screen and (max-width: 475px) {
+    .about {
+        &Wrapper {
+            & p {
+                font-size: 1rem;
+            }
+    }
+}
     .btnMB{
         display: block;
         width: 60%;
@@ -79,4 +93,5 @@
     .btnMB:last-child{
         margin-left: 20%;
     }
+   
 }

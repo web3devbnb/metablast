@@ -6,7 +6,7 @@ import style from './Advisors.module.scss'
 
 function Advisors(){
     return(
-        <section className={style.Advisors}>
+        <section className={style.Advisors} id='advisors'>
             <div className="container">
                 <h2 className="title" data-aos="fade-up">Our <span>Advisors</span></h2>
                 <div className={style.AdvisorsWrapper}>

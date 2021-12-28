@@ -10,7 +10,7 @@ import style from  './communities.module.scss'
 
 function Communities(){
     return(
-        <section className={style.communities}>
+        <section className={style.communities} id='communities'>
         <img src={urlImgBG} alt="communities"/>
         <div className={style.communitiesSocial}>
             <div className={style.communitiesSocialTelegram}>

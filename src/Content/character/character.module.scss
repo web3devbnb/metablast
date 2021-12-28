@@ -1,12 +1,13 @@
 
+
 .character{
     position: relative;
     &title{
         position: absolute;
-        top: 10%;
         z-index: 1;
         left: 50%;
         transform: translate(-50%,0);
+        width: 26%;
     }
     & h1{
         color: var(--color_primary);
@@ -18,11 +19,12 @@
         margin: auto;
         position: absolute !important;
         bottom: 0;
+        display: none !important;
         &Item{
             width: 5.15% !important;
         }
     }
-    &SecondSlider{
+    &SecondSlider{ 
         position: relative;
         display: flex !important;
         flex-direction: row;
@@ -45,11 +47,54 @@
         }
     }
 }
-
+@media screen and (max-width: 1200px) {
+    .character{
+        &SecondSlider{
+            &Title{
+                top: 45%;
+                left: 12%;
+                width: 40% !important;
+            }
+        }
+    }
+}
 @media screen and (max-width: 1000px) {
     .character{
+        &title{
+            width: 26%;
+        }
+        &SecondSlider{
+            & img{
+                order: 1;
+                width: 80% !important;
+            }
+            &Title{
+                order: 2;
+                top: 50%;
+                left: 5%;
+                width: 60% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .character{
+        &SecondSlider{
+            &Title{
+                top: 30%;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    
+    .character{
+       
         &FirstSlider{
             width: 60%;
+            display: none !important;
         }
         &SecondSlider{
             flex-direction: column;
@@ -58,16 +103,11 @@
                 width: 80% !important;
             }
             &Title{
-                order: 2;
-                width: 100% !important;
+                font-size: 0.6rem;
+                width: 60% !important;
+                top: 30%;
+                left: 5%;
             }
-        }
-    }
-}
-@media screen and (max-width: 500px) {
-    .character{
-        &FirstSlider{
-            width: 100%;
         }
     }
 }

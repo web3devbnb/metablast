@@ -8,7 +8,7 @@ import style from './partners.module.scss'
 
 function Partners(){
     return(
-    <section className={style.partners}>
+    <section className={style.partners} id='partners'>
         <div className="container">
             <h2 className="title" data-aos="fade-up">our <span>partners</span></h2>
             <div className={style.partnersWrapper} data-aos="flip-up" data-aos-delay="300">

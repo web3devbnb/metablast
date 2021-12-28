@@ -15,11 +15,17 @@
     &Container {
         &Logo{
             margin-top: -20px;
-            width: 110px;
-            height: 110px;
+            & img{
+            width: 200px;
+            height: 200px;
+            }
         }
         &Down {
             height: 70px;
+            & .headerContainerLogo img{
+                width: 110px;
+                height: 110px;
+            }
         }
         width: 100%;
         display: flex;
@@ -31,6 +37,7 @@
         left: auto;
         &Menu {
             width: calc(100% - 200px);
+            height: 70px;
             & nav {
                 height: 100%;
             }

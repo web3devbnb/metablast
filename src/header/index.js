@@ -42,15 +42,12 @@ function Header(){
             <div className={clsx(style.headerContainerMenu,{[style.display_block]:showMB})}>
                 <nav>
                     <ul className={clsx(style.mainMenu,{[style.responsive]:showMB})} id="myTopnav">
-                        <li><a href="#" className={style.active}>META GUNNER</a></li>
-                        <li><a href="#About">CONCEPT</a></li>
-                        <li><a href="#Metaverse">GAMEPLAY</a></li>
-                        <li><a href="#Roadmap">SYSTEM</a></li>
-                        <li><a href="#Tokenomics">ECONOMY</a></li>
-                        <li><a href="#Communities">TOKENOMICS</a></li>
-                        <li><a href="#Roadmap">ROADMAP</a></li>
-                        <li><a href="#Backers">THE TEAM</a></li>
-                        
+                        <li><a href="#features" className={style.active}>FEATURES</a></li>
+                        <li><a href="#character">CHARACTER</a></li>
+                        <li><a href="#roadmap">ROADMAP</a></li>
+                        <li><a href="#tokenomics">TOKENOMICS</a></li>
+                        <li><a href="#advisors">TEAM</a></li>
+                        <li><a href="https://whitepaper.metagunner.io/" target="_blank">Whitepaper</a></li>
                     </ul>
                 </nav>
             </div>

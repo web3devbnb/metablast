@@ -6,11 +6,16 @@ import urlvideo5 from "../../media/0005.mp4"
 import urlvideo6 from "../../media/0006.mp4"
 import urlvideo7 from "../../media/0007.mp4"
 // import urlgif from "../../media/1-unscreen.gif"
-import url1 from "../../media/1.png"
-import url2 from "../../media/2.png"
-import url3 from "../../media/3.png"
-import url4 from "../../media/4.png"
-import url5 from "../../media/5.png"
+import url1 from "../../media/Gunner.png"
+// import url1 from "../../media/1.png"
+import url2 from "../../media/Scout.png"
+import url3 from "../../media/Sniper.png"
+import url4 from "../../media/Special_force.png"
+import url5 from "../../media/Picture1.png"
+import url6 from "../../media/Medic.png"
+import url7 from "../../media/Officer.png"
+import urlCHARACTER from "../../media/CHARACTER.png"
+
 import React, { Component } from "react";
 import Slider from "react-slick";
 import style from "./character.module.scss"
@@ -22,7 +27,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "none"}}
+      style={{content:'!important', position: 'absolute',top: '50%',right: 0,width: '11%',height: '8%'}}
       onClick={onClick}
     />
   );
@@ -33,7 +38,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "none"}}
+      style={{position: 'absolute',top: '50%',left: 0,zIndex:1,width: '11%',height: '8%'}}
       onClick={onClick}
     />
   );
@@ -67,15 +72,24 @@ export default class AsNavFor extends Component {
       prevArrow: <SamplePrevArrow />
     };
     return (
-      <section className={style.character}>
+      <section className={style.character} id="character">
+            <div className='container'>
         <div className={style.charactertitle}>
-        <h1>CHARACTER</h1>
+        <img src={urlCHARACTER} alt=""/>
+        </div>
         </div>
         <Slider
           asNavFor={this.state.nav2}
           ref={slider => (this.slider1 = slider)}
           {...settings1}
         >
+          <div className={style.characterSecondSlider}>
+                <div className={style.characterSecondSliderTitle}>
+                    <h2>Gunner</h2>
+                    <span>A well-trained Navy SEAL that can improvise, adapt, and overcome any situations. He is a real weapon-savvy and can make the most of everything around him to finish a job</span>
+                </div>
+                <video src={urlvideo6} autoplay='autoplay' muted='muted' loop='loop'></video>
+          </div>
           <div className={style.characterSecondSlider}>
                 <div className={style.characterSecondSliderTitle}>
                     <h2>Scout</h2>
@@ -104,13 +118,7 @@ export default class AsNavFor extends Component {
                 </div>
                 <video src={urlvideo5} autoplay='autoplay' muted='muted' loop='loop'></video>
           </div>
-          <div className={style.characterSecondSlider}>
-                <div className={style.characterSecondSliderTitle}>
-                    <h2>Gunner</h2>
-                    <span>A well-trained Navy SEAL that can improvise, adapt, and overcome any situations. He is a real weapon-savvy and can make the most of everything around him to finish a job</span>
-                </div>
-                <video src={urlvideo6} autoplay='autoplay' muted='muted' loop='loop'></video>
-          </div>
+          
           <div className={style.characterSecondSlider}>
                 <div className={style.characterSecondSliderTitle}>
                     <h2>Medic</h2>
@@ -136,27 +144,27 @@ export default class AsNavFor extends Component {
           className={style.characterFirstSlider}
           {...settings2}
         >
-          <div style={{width:'calc(100% / 7 )'}}>
+          <div style={{width:'calc(100% / 10 )'}}>
                 <img src={url1} alt=""/>
                {/* <video src={urlvideo} autoplay='autoplay' muted='muted' loop='loop'></video> */}
           </div>
-          <div style={{width:'calc(100% / 7 )'}}>
+          <div style={{width:'calc(100% / 10 )'}}>
                 <img src={url2} alt=""/>
           </div>
-          <div style={{width:'calc(100% / 7 )'}}>
+          <div style={{width:'calc(100% / 10 )'}}>
                 <img src={url3} alt=""/>
           </div>
-          <div style={{width:'calc(100% / 7 )'}}>
+          <div style={{width:'calc(100% / 10 )'}}>
                 <img src={url4} alt=""/>
           </div>
-          <div style={{width:'calc(100% / 7 )'}}>
+          <div style={{width:'calc(100% / 10 )'}}>
                 <img src={url5} alt=""/>
           </div>
-          <div style={{width:'calc(100% / 7 )'}}>
-                <img src={url5} alt=""/>
+          <div style={{width:'calc(100% / 10 )'}}>
+                <img src={url6} alt=""/>
           </div>
-          <div style={{width:'calc(100% / 7 )'}}>
-                <img src={url5} alt=""/>
+          <div style={{width:'calc(100% / 10 )'}}>
+                <img src={url7} alt=""/>
           </div>
         </Slider>
       </section>

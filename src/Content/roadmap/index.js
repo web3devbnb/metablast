@@ -6,7 +6,7 @@ import style from './roadmap.module.scss'
 
 function Roadmap(){
     return(
-        <section className={style.roadmap}>
+        <section className={style.roadmap} id='roadmap'>
         <img src={urlImg1} alt=""/>
         {/* <div className="container">
             <h2 className={style.title} data-aos="fade-up">Road<span>Map</span></h2>

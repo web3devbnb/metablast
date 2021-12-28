@@ -2,7 +2,7 @@ import imgLogo from '../media/Logo.png'
 import imgTelegram from '../media/telegram.svg'
 import imgDiscord from '../media/discord.svg'
 import imgTwitter from '../media/twitter.svg'
-import imgGithub from '../media/github.svg'
+import imgGithub from '../media/githubbbb.svg'
 import imgMedium from '../media/medium.svg'
 
 import style from './footer.module.scss'

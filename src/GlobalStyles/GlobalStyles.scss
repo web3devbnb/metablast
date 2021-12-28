@@ -1,5 +1,5 @@
 :root{
-    --color_primary:#00efff;
+    --color_primary:#ff2f00;
     // --color_primary:#fb1b00;
     // --color_black_down:#000;
     --color_black_down:#000000ad;
@@ -146,7 +146,32 @@ video {
         color: var(--color_primary);
     }
 }
-
+// import urlNext from "../../media/next.png"
+// import urlprev from "../../media/prev.png"
 .slick-slide div {
     outline: none;
    }
+.slick-next:before,
+.slick-prev:before
+{
+    content: '' !important;
+}
+.slick-next{
+    background-image: url('../media/next.png') !important;
+    background-position: center right !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.slick-prev{
+    background-image: url('../media/prev.png') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+@media screen and (max-width: 1000px) {
+    .slick-next{
+        
+    }
+    .slick-prev{}
+}

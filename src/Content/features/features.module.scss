@@ -3,34 +3,33 @@
     object-fit: cover;
     background-position: center ;
     background-repeat: no-repeat;
+    background-size: cover;
     & h1{
         font-size: 3rem;
     }
     &Title {
-        font-size: 3rem;
-        color: white;
-        margin-bottom: 3rem;
-        text-align: center;
-        padding-top: 35px;
-        & h2>span {
-            color: var(--color_primary);
-        }
+        width: 26%;
+        margin: auto;
+        margin-bottom: 30px;
     }
     &Wrapper {
-        display: grid;
-        gap: 3%;
-        grid-template-columns: repeat(auto-fit, minmax(calc(400px - 3%), calc(800px - 3%)));
-        justify-content: center;
+        // display: grid;
+        // gap: 3%;
+        // grid-template-columns: repeat(auto-fit, minmax(calc(400px - 3%), calc(800px - 3%)));
+        // justify-content: center;
         // margin-bottom: 10%;
+        display: flex;
+        flex-direction:column;
     }
+    
 }
 
 .featureCard {
     display: flex;
     align-items:center;
-    padding-bottom: 50px;
     &Top {
         text-align: center;
+        width: 50%;
         // background:  var(--color_primary);
         &Title {
             font-size: 1.5rem;
@@ -57,16 +56,17 @@
         }
         &Img {
             & img {
-                width: 420px;
-                margin: 30px;
+                // margin: 30px;
+                // margin-top: 40px;
             }
         }
     }
     &Bottom {
         // border: 8px solid var(--color_primary);
         border-top-width: 0;
+        width: 50%;
         &Title {
-            padding: 37px 0 17px;
+            padding: 37px 30px 17px;
             & h3 {
                 font-family: "Bangers", sans-serif;
                 color: var(--color_text_white);
@@ -86,14 +86,14 @@
             }
         }
     }
+    &Four{
+        margin-bottom: 60px;
+    }
 }
 @media screen and (max-width: 1000px) {
     .features {
         &Title {
             font-size: 2.5rem;
-        }
-        &Wrapper{
-            margin-bottom: 25%;
         }
     }
     
@@ -101,33 +101,59 @@
 @media screen and (max-width: 799px) {
     .features {
         &Title {
-            font-size: 2rem;
-        }
-        &Wrapper{
-            margin-bottom: 75%;
+            width: 40%;
         }
     }
-    
-}
-@media screen and (max-width: 650px) {
-    .featuresWrapper{
-            margin-bottom: 100%;
+    .featureCard {
+        flex-direction:column;
+        &Two{
+            & .featureCardTop{
+                order: 2;
+            }
+            & .featureCardBottom{
+                order: 1;
+            }
         }
+        &Four{
+            & .featureCardTop{
+                order: 2;
+            }
+            & .featureCardBottom{
+                order: 1;
+            }
+        }
+    }
 }
+// @media screen and (max-width: 650px) {
+//     .featuresWrapper{
+//             margin-bottom: 100%;
+//         }
+// }
 @media screen and (max-width: 600px) {
     .features {
         &Title {
             font-size: 1.5rem;
         }
     }
-}
-@media screen and (max-width: 480px) {
-    .featuresWrapper{
-            margin-bottom: 120%;
+    .featureCard {
+        flex-direction:column;
+        &Top{
+                width: 100%;
+            }
+        &Bottom{
+                width: 100%;
+            }
         }
 }
-@media screen and (max-width: 410px) {
-    .featuresWrapper{
-            margin-bottom: 150%;
+@media screen and (max-width: 500px) {
+    .features {
+        &Title {
+            width: 60%;
         }
+    }
 }
+// @media screen and (max-width: 410px) {
+//     .featuresWrapper{
+//             margin-bottom: 150%;
+//         }
+// }

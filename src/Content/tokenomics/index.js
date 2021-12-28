@@ -4,7 +4,7 @@ import clsx from 'clsx'
 
 function Tokenomics(){
     return(
-        <section className={style.tokenomics}>
+        <section className={style.tokenomics} id='tokenomics'>
             <div className='container'>
                 <div className={style.tokenomicsWrapper}>
                     <div className={style.tokenomicsWrapperImg} data-aos="fade-up-right" data-aos-delay="300">
