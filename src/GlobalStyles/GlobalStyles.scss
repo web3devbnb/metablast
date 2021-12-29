@@ -193,10 +193,8 @@ video {
 // }
 
 @media screen and (max-width: 1000px) {
-    .slick-next{
-        display: none !important;
-    }
+    .slick-next,
     .slick-prev{
-        display: none !important
+        // display: none !important
     }
 }

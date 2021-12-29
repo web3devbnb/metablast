@@ -103,7 +103,6 @@
         }
         &FirstSlider{
             width: 60%;
-            display: none !important;
         }
         &SecondSlider{
             flex-direction: column;
@@ -113,9 +112,9 @@
             }
             &Title{
                 font-size: 0.6rem;
-                width: 60% !important;
+                width: 45% !important;
                 top: 30%;
-                left: 5%;
+                left: 15%;
             }
         }
     }

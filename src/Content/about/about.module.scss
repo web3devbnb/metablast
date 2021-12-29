@@ -1,9 +1,16 @@
 
+.imgBg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
 .about {
-    background-image: url(../../media/banner-9.png);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url(../../media/banner-9.png);
+    // background-position: center right;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     position: relative;
     margin-top: -50px;
     & .container {
@@ -75,7 +82,10 @@
         font-size:20px !important;
     }
 }
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 500px) {
+    .imgBg{
+        content: url(../../media/banner-9-mb.png);
+    }
     .about {
         &Wrapper {
             & p {

@@ -13,7 +13,7 @@ function Roadmap(){
                 <img src={urlTitle} alt=""/>
                 </div>
             </div>
-        <img src={urlImg1} alt=""/>
+        <img src={urlImg1} className={style.imgRoadmap} alt=""/>
         {/* <div className="container">
             <h2 className={style.title} data-aos="fade-up">Road<span>Map</span></h2>
             <div className={style.roadmapWrapper}>

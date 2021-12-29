@@ -77,3 +77,9 @@
         transform: translate(-50%, 0);
     }
 }
+@media screen and (max-width:500px) {
+    .imgRoadmap{
+        margin-top: 40px;
+        content: url(../../media/roadmap_MB.png);
+    }
+}
