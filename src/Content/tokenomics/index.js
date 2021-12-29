@@ -20,7 +20,7 @@ function Tokenomics(){
                         </div> */}
                         <p>Total Supply: <span>200,000,000 $MGC</span> </p>
                         <ul className={style.tokenomicsWrapperContentList}>
-                            <li><span>Private Sale:</span><span>15%</span></li>
+                            <li><span>Private Round:</span><span>15%</span></li>
                             <li><span>Public Round:</span><span>3%</span></li>
                             <li><span>Team:</span><span>15%</span></li>
                             <li><span>Advisors & Partners:</span><span>5%</span></li>

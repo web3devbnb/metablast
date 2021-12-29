@@ -26,7 +26,7 @@ function Footer(){
                     <li>Marketplace</li>
                     <li>How to play</li>
                 </ul> */}
-                <p className={style.copyright}>Copyright © 2021 Meta Gunner All rights reserved.</p>
+                <p className={style.copyright}>Copyright © 2021 MetaGunner All rights reserved.</p>
             </div>
         </div>
     </footer>

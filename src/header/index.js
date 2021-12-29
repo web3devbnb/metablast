@@ -38,8 +38,8 @@ function Header(){
                 document.getElementById("navbar").style.top = "0";
                 document.getElementById("navbarContainer").style.top = "0";
             } else {
-                document.getElementById("navbar").style.top = "-100px";
-                document.getElementById("navbarContainer").style.top = "-100px";
+                document.getElementById("navbar").style.top = "-200px";
+                document.getElementById("navbarContainer").style.top = "-200px";
             }
         prevScrollpos = currentScrollPos;
         }
