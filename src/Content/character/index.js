@@ -61,13 +61,13 @@ export default class AsNavFor extends Component {
 
   render() {
     const settings1 = {
-      infinite:false,
+      infinite:true,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />
     };
     const settings2 = {
       slidesToShow: 7,
-      infinite:false,
+      infinite:true,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />
     };
