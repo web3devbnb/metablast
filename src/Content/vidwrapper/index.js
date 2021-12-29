@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import urlvideo from '../../media/metagunner_clip_banner.mp4'
+// import urlvideo from '../../media/metagunner_clip_banner.mp4'
 import urlLogo from '../../media/Logo.png'
 import urlimg1 from '../../media/layer1.png'
 import urlimg2 from '../../media/layer2.png'

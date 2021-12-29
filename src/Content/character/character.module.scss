@@ -98,7 +98,9 @@
 @media screen and (max-width: 500px) {
     
     .character{
-       
+        &title{
+            top: -60px;
+        }
         &FirstSlider{
             width: 60%;
             display: none !important;
