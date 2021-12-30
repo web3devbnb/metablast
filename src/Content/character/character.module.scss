@@ -15,6 +15,13 @@
         left: 50%;
         transform: translate(-50%,0);
         width: 26%;
+        & p{
+            color: var(--color_text_white);
+            font-size: 1.2rem;
+            font-weight: 700;
+            width: 220%;
+            margin-left: -55%;
+        }
     }
     & h1{
         color: var(--color_primary);
@@ -87,6 +94,10 @@
 
 @media screen and (max-width: 700px) {
     .character{
+        &title p{
+                font-size: 0.8rem;
+            }
+        
         &SecondSlider{
             &Title{
                 top: 30%;
@@ -96,10 +107,15 @@
     }
 }
 @media screen and (max-width: 500px) {
-    
     .character{
         &title{
             top: -60px;
+            width: 40%;
+            & p{
+                font-size: 0.6rem;
+                width: 110%;
+                margin-left: -5%;
+            }
         }
         &FirstSlider{
             width: 60%;

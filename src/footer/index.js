@@ -19,7 +19,7 @@ function Footer(){
                     <a href="https://discord.gg/ukW2Udas9f" target="_blank" rel="noopener noreferrer"><img src={imgDiscord} alt=""/></a>
                     <a href="https://twitter.com/MetaGunner_io" target="_blank" rel="noopener noreferrer"><img src={imgTwitter} alt=""/></a>
                     <a href="/" target="_blank" rel="noopener noreferrer"><img src={imgGithub} alt=""/></a> 
-                    <a href="metagunner.medium.com" target="_blank" rel="noopener noreferrer"><img src={imgMedium} alt=""/></a>
+                    <a href="https://metagunner.medium.com" target="_blank" rel="noopener noreferrer"><img src={imgMedium} alt=""/></a>
                 </div>
                 {/* <ul className={style.footerWrapperNav}>
                     <li>Launch APP</li>

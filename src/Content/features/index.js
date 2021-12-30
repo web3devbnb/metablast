@@ -15,7 +15,7 @@ function Features(){
                     <img src={urlFEATURES} alt="" data-aos="fade-up" data-aos-once="true"/>
                 </div>
                 <div className={style.featuresWrapper}>
-                    <div className={clsx(style.featureCard,style.featureCardOne)} data-aos="fade-right" data-aos-once="true" data-aos-duration="500">
+                    <div className={clsx(style.featureCard,style.featureCardOne)} data-aos="fade-right" data-aos-once="true" data-aos-delay="300" data-aos-duration="500">
                         <div className={style.featureCardBottom}>
                             <div className={style.featureCardBottomTitle}>
                                 <h3><span>Campaign</span></h3>

@@ -9,4 +9,5 @@ import Communities from './communities'
 import Partners from './partners'
 import Investors from './investors'
 import TEAM from './TEAM'
-export  {Vidwrapper,About,Features,Character,Basecamp,Roadmap,Tokenomics,Communities,Partners,Investors,TEAM}
+import NFTsItem from './NFTsItem'
+export  {Vidwrapper,About,Features,Character,Basecamp,Roadmap,Tokenomics,Communities,Partners,Investors,TEAM,NFTsItem}

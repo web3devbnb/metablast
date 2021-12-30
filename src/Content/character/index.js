@@ -76,6 +76,7 @@ export default class AsNavFor extends Component {
         <div className={clsx('container',style.characterContainer)}>
           <div className={style.charactertitle}>
             <img src={urlCHARACTER} alt=""/>
+            <p>The 15 characters of MetaGunner are divided into seven types of troops</p>
           </div>
         </div>
         <Slider

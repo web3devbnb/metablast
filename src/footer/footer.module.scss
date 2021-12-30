@@ -63,10 +63,27 @@
     }
 }
 @media screen and (max-width:500px) {
-    .footerWrapperSocial{ 
+    .footerWrapper{
+        & img {
+        width: 80%;
+        }
+        &Social{ 
                 & img {
                 width: 7vw;
                 height: 7vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .footerWrapper{
+        &Social{ 
+                & img {
+                width: 7vw;
+                height: 7vw;
+                margin: 5px;
+            }
         }
     }
 }
