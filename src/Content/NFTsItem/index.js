@@ -61,7 +61,7 @@ function SamplePrevArrow(props) {
 export default class AsNavFor extends Component {
    render() {
     const settings = {
-      slidesToShow: 7,
+      slidesToShow: 6,
       infinite:true,
       slidesToScroll: 1,
       swipeToSlide: true,
@@ -74,7 +74,7 @@ export default class AsNavFor extends Component {
             {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 5,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true
@@ -83,7 +83,7 @@ export default class AsNavFor extends Component {
             {
               breakpoint: 600,
               settings: {
-                slidesToShow: 4,
+                slidesToShow: 3,
                 slidesToScroll: 1,
                 initialSlide: 2
               }
@@ -91,7 +91,7 @@ export default class AsNavFor extends Component {
             {
               breakpoint: 480,
               settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1
               }
             }
