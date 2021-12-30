@@ -98,7 +98,7 @@ export default class AsNavFor extends Component {
           ]
     };
     return (
-      <section className={style.NFTsItem} id="character">
+      <section className={style.NFTsItem} id="NFTsItem">
         <div className={clsx('container',style.NFTsItemContainer)}>
           <div className={style.NFTsItemTitle}>
             <img src={urlCHARACTER} alt=""/>

@@ -38,8 +38,8 @@ function Header(){
                 document.getElementById("navbar").style.top = "0";
                 document.getElementById("navbarContainer").style.top = "0";
             } else {
-                document.getElementById("navbar").style.top = "-200px";
-                document.getElementById("navbarContainer").style.top = "-200px";
+                document.getElementById("navbar").style.top = "-250px";
+                document.getElementById("navbarContainer").style.top = "-250px";
             }
         prevScrollpos = currentScrollPos;
         }
@@ -56,6 +56,7 @@ function Header(){
                 <nav>
                     <ul className={clsx(style.mainMenu,{[style.responsive]:showMB})} id="myTopnav">
                         <li><a href="#features">FEATURES</a></li>
+                        {/* <li><a href="#NFTsItem">NFTs Item</a></li> */}
                         <li><a href="#character">CHARACTER</a></li>
                         <li><a href="#roadmap">ROADMAP</a></li>
                         <li><a href="#tokenomics">TOKENOMICS</a></li>
