@@ -54,10 +54,10 @@
             font-size: 1.5rem;
             color: var(--color_text_white);
             width: 30% !important;
-            height: 50% !important;
             & h2{
                 margin-bottom: 15px;
             }
+            
         }
     }
 }
@@ -109,12 +109,13 @@
 @media screen and (max-width: 500px) {
     .character{
         &title{
-            top: -60px;
             width: 40%;
             & p{
-                font-size: 0.6rem;
-                width: 110%;
-                margin-left: -5%;
+                display: none;
+                font-size: 0.8rem;
+                width: 230%;
+                margin-left: -65%;
+                margin-top: -5%;
             }
         }
         &FirstSlider{
@@ -127,10 +128,15 @@
                 width: 80% !important;
             }
             &Title{
-                font-size: 0.6rem;
-                width: 45% !important;
-                top: 30%;
+                font-size: 0.7rem;
+                width: 48% !important;
+                top: 25%;
                 left: 15%;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.753);
+                & h2{
+                    margin-bottom: 5px;
+                }
             }
         }
     }

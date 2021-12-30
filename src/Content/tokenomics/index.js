@@ -1,7 +1,6 @@
 import urlImg from '../../media/tokenomics.25d3c6dd.png'
 import urlTitle from '../../media/Tokenomics.png'
 import style from './tokenomics.module.scss'
-import clsx from 'clsx'
 
 function Tokenomics(){
     return(
@@ -18,7 +17,7 @@ function Tokenomics(){
                         {/* <div className={style.tokenomicsWrapperContentTitle}>
                             TOKENOMICS <span>DISTRUBUTION</span>
                         </div> */}
-                        <p>Total Supply: <span>200,000,000 $MGC</span> </p>
+                        <p>Total Supply: <span>200,000,000 $MTG</span> </p>
                         <ul className={style.tokenomicsWrapperContentList}>
                             <li><span>Private Round:</span><span>15%</span></li>
                             <li><span>Public Round:</span><span>3%</span></li>
