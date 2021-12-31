@@ -55,8 +55,8 @@
             max-width: 1500px;
             margin: auto;
             display: grid;
-            gap: 10%;
-            grid-template-columns: repeat(auto-fit, minmax(calc(360px - 10%), calc(500px - 10%)));
+            gap: 5%;
+            grid-template-columns: repeat(auto-fit, minmax(calc(300px - 10%), calc(350px - 10%)));
             justify-content: center;
             margin-bottom: 10%;
             &ItemBottom {
@@ -65,12 +65,12 @@
                     padding-left: 20px;
                     text-align: center;
                     & .name{
-                        font-size: 1.8rem;
+                        font-size: 1.4rem;
                         color: var(--color_text_white);
                         margin-bottom: 5px;
                     }
                     & p {
-                        font-size: 20px;
+                        font-size: 16px;
                         color: var(--color_text_white);
                         font-style: italic;
                     }
@@ -80,6 +80,15 @@
         
 }
 
+@media screen and (max-width: 1352px) {
+    .Advisors {
+        &Wrapper {
+            &Top {
+            margin-bottom: 25%;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 1025px) {
     .Advisors {
