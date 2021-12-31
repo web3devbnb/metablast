@@ -3,6 +3,11 @@ import clsx from 'clsx'
 import urlBtn from '../media/orange_button.png'
 import urlLogo from '../media/Logo.png'
 import style from './header.module.scss'
+import imgTelegram from '../media/telegram.svg'
+import imgDiscord from '../media/discord.svg'
+import imgTwitter from '../media/twitter.svg'
+import imgMedium from '../media/medium.svg'
+import imgFacebook from '../media/facebook.svg'
 
 function Header(){
     const [show,setShow] = useState(false)
@@ -37,9 +42,11 @@ function Header(){
             if (prevScrollpos > currentScrollPos) {
                 document.getElementById("navbar").style.top = "0";
                 document.getElementById("navbarContainer").style.top = "0";
+                document.getElementById("Social").style.top = "50%";
             } else {
-                document.getElementById("navbar").style.top = "-250px";
-                document.getElementById("navbarContainer").style.top = "-250px";
+                document.getElementById("navbar").style.top = "-260px";
+                document.getElementById("navbarContainer").style.top = "-260px";
+                document.getElementById("Social").style.top = "calc(50% + 260px)";
             }
         prevScrollpos = currentScrollPos;
         }
@@ -69,6 +76,14 @@ function Header(){
                 <img src={urlBtn} alt=""/>
             </button>
         </div>
+        <div className={style.headerWrapperSocial} id='Social'>
+                    <a href="https://t.me/MetaGunnerChannel" target="_blank" rel="noopener noreferrer"><img src={imgTelegram} alt=""/></a>
+                    <a href="https://discord.gg/3dNjuDMjcB" target="_blank" rel="noopener noreferrer"><img src={imgDiscord} alt=""/></a>
+                    <a href="https://twitter.com/MetaGunner_io" target="_blank" rel="noopener noreferrer"><img src={imgTwitter} alt=""/></a>
+                    {/* <a href="/" target="_blank" rel="noopener noreferrer"><img src={imgGithub} alt=""/></a>  */}
+                    <a href="https://metagunner.medium.com" target="_blank" rel="noopener noreferrer"><img src={imgMedium} alt=""/></a>
+                    <a href="https://www.facebook.com/Meta-Gunner-104600948766397" target="_blank" rel="noopener noreferrer"><img src={imgFacebook} alt=""/></a>
+                </div>
     </header>
     </>
     )

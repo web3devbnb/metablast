@@ -17,7 +17,7 @@ function Roadmap(){
             </div>
         {/* <img src={urlImg1} className={style.imgRoadmap} alt=""/> */}
         <div className={style.roadmapWrapper}>
-            <div className={style.roadmapWrapperItem} data-aos="fade-right" data-aos-delay="1500" data-aos-duration="1000">
+            <div className={style.roadmapWrapperItem} data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                 <img src={urlItem1} alt=""/>
             </div>
             <div className={style.roadmapWrapperItem} data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">

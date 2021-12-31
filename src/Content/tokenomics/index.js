@@ -10,10 +10,10 @@ function Tokenomics(){
                     <div className={style.tokenomicsWrapperTitle}>
                         <img src={urlTitle} alt=""/>
                     </div>
-                    <div className={style.tokenomicsWrapperImg} data-aos="fade-up-right" data-aos-delay="300">
+                    <div className={style.tokenomicsWrapperImg} data-aos="fade-up-right" data-aos-once="true" data-aos-delay="300">
                         <img src={urlImg} alt="tokenomic"/>
                     </div>
-                    <div className={style.tokenomicsWrapperContent} data-aos="fade-up-left" data-aos-delay="300">
+                    <div className={style.tokenomicsWrapperContent} data-aos="fade-up-left" data-aos-once="true" data-aos-delay="300">
                         {/* <div className={style.tokenomicsWrapperContentTitle}>
                             TOKENOMICS <span>DISTRUBUTION</span>
                         </div> */}
