@@ -31,7 +31,7 @@ function Advisors(){
                             <div className={style.position}>Founder/Chief Executive Officer</div>
                             <div class={style.background}>
                             Chief Operating Officer of BEUS Co.,Ltd<br></br><br></br>
-                            4+ years of experience in E-commerce in global retail market<br></br><br></br>
+                            4+ years of experience in E-commerce in the global retail market<br></br><br></br>
                             7+ years of experience in E-business and Digital Media</div>
                         </div>
                     </div>
