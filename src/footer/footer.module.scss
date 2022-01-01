@@ -4,13 +4,14 @@
     // background-repeat: no-repeat;
     // background-position: center;
     // margin-bottom: -50px;
+    display: flex;
     &Wrapper {
         width: 60%;
-        margin: auto;
         text-align: center;
         padding-bottom: 40px;
-        & img {
+        &Logo {
             width: 30%;
+            margin: auto;
         }
         & p {
             color: var(--color_text_white);
@@ -52,6 +53,43 @@
             }
         }
     }
+    &Menu{
+        width: 40%;
+        color: var(--color_text_white);
+        display: flex;
+        align-items:flex-start;
+        padding: 4%;
+        &About{
+            width: 35%;
+            & h2{
+                margin-bottom: 20px;
+            }
+            & ul{
+                list-style: none;
+                & li {
+                    margin-bottom: 5px;
+                    font-size: 17px;
+                }
+            }
+        }
+        &FAQ{
+            width: 65%;
+            & h2{
+                margin-bottom: 20px;
+            }
+            & ul{
+                list-style: none;
+                & li{
+                    margin-bottom: 5px;
+                    font-size: 17px;
+                    & a{
+                        color: var(--color_text_white);
+                        text-decoration: none
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:1200px) {
@@ -62,9 +100,18 @@
         }
     }
 }
+@media screen and (max-width:1025px) {
+    .footer {
+        flex-direction:column;
+        align-items:center;
+        &Menu{
+            width: 100%;
+        }
+    }
+}
 @media screen and (max-width:500px) {
     .footerWrapper{
-        & img {
+        &Logo {
         width: 80%;
         }
         &Social{ 
