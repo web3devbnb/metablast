@@ -30,7 +30,7 @@ function Advisors(){
                             </div>
                             <div className={style.position}>Founder/Chief Executive Officer</div>
                             <div class={style.background}>
-                            Chief Operating Officer of BEUS Co.,Ltd<br></br><br></br>
+                            Chief Operating Officer of BEUS <br></br><br></br>
                             4+ years of experience in E-commerce in the global retail market<br></br><br></br>
                             7+ years of experience in E-business and Digital Media</div>
                         </div>
@@ -45,7 +45,8 @@ function Advisors(){
                             </div>
                             <div className={style.position}>Chief Operating Officer</div>
                             <div class={style.background}>
-                            Product Manager of Nuca Express<br></br><br></br>
+                            Founder of Nuca Streaming Entertainment<br></br><br></br>
+                            Founder of Nuca Express<br></br><br></br>
                             4+ years of experience in software engineering at top software companies in Vietnam: Sunshine Tech, Plustus Fintech, Transaction Technologies, Shopiness, SPLUS-SOFTWARE</div>
                         </div>
                     </div>
@@ -57,12 +58,12 @@ function Advisors(){
                             <div className={style.name}>
                                 <h5>Tony Pham</h5>
                             </div>
-                            <div className={style.position}>Blockchain Developer</div>
+                            <div className={style.position}>Chief Technology Officer</div>
                             <div class={style.background}>
-                           <br></br><br></br>
-                            <br></br><br></br>
-                            <br></br><br></br>
-                            </div>
+                            Chief Technology Officer of Nuca Express<br></br><br></br>
+                            Chief Technology Officer of Nuca Streaming Entertainment<br></br><br></br>
+                            3+ years experience as Full-stack Developer in Transacton Technologies for stock market<br></br><br></br>
+                            2+ years experience as Blockchain Developer</div>
                         </div>
                     </div>
                     <div className={style.AdvisorsWrapperTopItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="200">
