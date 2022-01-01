@@ -54,7 +54,10 @@
             top: 40%;
             font-size: 1.5rem;
             color: var(--color_text_white);
-            width: 30% !important;
+            width: 34% !important;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.781);
+            border-radius: 30px;
             & h2{
                 margin-bottom: 15px;
             }

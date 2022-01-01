@@ -35,7 +35,7 @@ Players embark on exciting adventures and play as soldiers armed with weapons to
                         <div className={style.featureCardBottom}>
                             <div className={style.featureCardBottomTitle}>
                                 <h3><span>Arena</span></h3>
-                                <p>Arena Mode consists of two different sub-modes: Battle Royale and TeamFire. Battle Royale is where soldiers join in the deadliest battles to determine the greatest warrior. TeamFire is the place for teams of five to combat and decide which team is the strongest of all. </p>
+                                <p>Arena Mode consists of two different sub-modes: Battle Royale and Team Fire. Battle Royale is where soldiers join in the deadliest battles to determine the greatest warrior. TeamFire is the place for teams of five to combat and decide which team is the strongest of all. </p>
                             </div>
                         </div>
                     </div>

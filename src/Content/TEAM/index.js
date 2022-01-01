@@ -28,7 +28,7 @@ function Advisors(){
                             <div className={style.name}>
                                 <h5>Andy Ly</h5>
                             </div>
-                            <div className={style.position}>Founder/Chief Executive Officer</div>
+                            <div className={style.position}>Founder/Chief Executive Officer & Founder of KOG Studio</div>
                             <div class={style.background}>
                             Chief Operating Officer of BEUS <br></br><br></br>
                             4+ years of experience in E-commerce in the global retail market<br></br><br></br>
@@ -46,7 +46,7 @@ function Advisors(){
                             <div className={style.position}>Chief Operating Officer</div>
                             <div class={style.background}>
                             Founder of Nuca Streaming Entertainment<br></br><br></br>
-                            Founder of Nuca Express<br></br><br></br>
+                            Founder of Nuca<br></br><br></br>
                             4+ years of experience in software engineering at top software companies in Vietnam: Sunshine Tech, Plustus Fintech, Transaction Technologies, Shopiness, SPLUS-SOFTWARE</div>
                         </div>
                     </div>
