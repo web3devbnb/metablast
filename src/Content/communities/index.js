@@ -1,9 +1,9 @@
-import urlImgTelegram from '../../media/telegram.svg'
-import urlImgDiscord from '../../media/telegram.svg'
-import urlImgTwitter from '../../media/telegram.svg'
-import urlImgGithub from '../../media/telegram.svg'
-import urlImgMedium from '../../media/telegram.svg'
-import urlImgBG from '../../media/communities.8a3fa910.png'
+// import urlImgTelegram from '../../media/telegram.svg'
+// import urlImgDiscord from '../../media/telegram.svg'
+// import urlImgTwitter from '../../media/telegram.svg'
+// import urlImgGithub from '../../media/telegram.svg'
+// import urlImgMedium from '../../media/telegram.svg'
+// import urlImgBG from '../../media/communities.8a3fa910.png'
 
 
 import style from  './communities.module.scss'
@@ -11,7 +11,7 @@ import style from  './communities.module.scss'
 function Communities(){
     return(
         <section className={style.communities} id='communities'>
-        <img src={urlImgBG} alt="communities"/>
+        {/* <img src={urlImgBG} alt="communities"/>
         <div className={style.communitiesSocial}>
             <div className={style.communitiesSocialTelegram}>
                 <a href="#"><img src={urlImgTelegram} alt=""/></a>
@@ -38,7 +38,7 @@ function Communities(){
                 <span>medium</span>
                 <p>News and Press</p>
             </div>
-        </div>
+        </div> */}
     </section>
     )
 }
