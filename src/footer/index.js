@@ -35,11 +35,11 @@ function Footer(){
                 <div className={style.footerMenuAbout}>
                     <h2>ABOUT</h2>
                     <ul>
-                        <li>FEATURES</li>
-                        <li>CHARACTER</li>
-                        <li>ROADMAP</li>
-                        <li>TOKENOMICS</li>
-                        <li>TEAM</li>
+                        <li><a href="#features">FEATURES</a></li>
+                        <li><a href="#character">CHARACTER</a></li>
+                        <li><a href="#roadmap">ROADMAP</a></li>
+                        <li><a href="#tokenomics">TOKENOMICS</a></li>
+                        <li><a href="#TEAM">TEAM</a></li>
                     </ul>
                 </div>
                 <div className={style.footerMenuFAQ}>
