@@ -63,7 +63,7 @@ function Advisors(){
                             <div class={style.background}>
                             Chief Technology Officer of Nuca<br></br><br></br>
                             Chief Technology Officer of Nuca Streaming Entertainment<br></br><br></br>
-                            3+ years experience as Full-stack Developer in Transaction Technologies for stock market<br></br><br></br>
+                            3+ years experience as Full-stack Developer in Transaction Technologies for the stock market<br></br><br></br>
                             2+ years experience as Blockchain Developer</div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@ function Advisors(){
                             <div className={style.position}>Product Lead/Game Designer</div>
                             <div class={style.background}>
                             10+ years of experience in operating game products<br></br><br></br>
-                            4+ years of experience in designing game products at top Vietnam Game Publishers: VNG Corporation, Mobile Entertainment Corporation, Amanotes, Wolffun etc.</div>
+                            4+ years of experience in designing game products at top Vietnam Game Publishers: VNG Corporation, Mobile Entertainment Corporation, Amanotes, Wolffun, etc.</div>
                         </div>
                     </div>
                 </div>
