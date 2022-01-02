@@ -35,22 +35,28 @@ function Header(){
         }
 
     })
-    useEffect(()=>{
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-                document.getElementById("navbarContainer").style.top = "0";
-                document.getElementById("Social").style.top = "50%";
-            } else {
-                document.getElementById("navbar").style.top = "-260px";
-                document.getElementById("navbarContainer").style.top = "-260px";
-                document.getElementById("Social").style.top = "calc(50% + 260px)";
-            }
-        prevScrollpos = currentScrollPos;
-        }
-    })
+    // useEffect(()=>{
+    //     const handleResize = ()=>{
+    //         if(window.innerWidth>1000){
+    //             var prevScrollpos = window.pageYOffset;
+    //             window.onscroll = function() {
+    //                 var currentScrollPos = window.pageYOffset;
+    //                 if (prevScrollpos > currentScrollPos & window.innerWidth<1000) {
+    //                     console.log(window.innerWidth)
+    //                     document.getElementById("navbar").style.top = "0";
+    //                     document.getElementById("navbarContainer").style.top = "0";
+    //                     document.getElementById("Social").style.top = "50%";
+    //                 } else {
+    //                     document.getElementById("navbar").style.top = "-260px";
+    //                     document.getElementById("navbarContainer").style.top = "-260px";
+    //                     document.getElementById("Social").style.top = "calc(50% + 260px)";
+    //                 }
+    //             prevScrollpos = currentScrollPos;
+    //             }
+    //         }
+    //     }
+    //     window.addEventListener('resize',handleResize)
+    // },[])
 
     return(
     <>

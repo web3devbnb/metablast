@@ -54,9 +54,10 @@
 @media screen and (max-width:500px) {
     .roadmap{
         &Title{
-        width: 40%;
+        width: 60%;
         }
         &Wrapper{
+            margin-top: 200px;
             &Item{
                 width: 80%;
             }

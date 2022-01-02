@@ -83,7 +83,7 @@
             & p {
                 color: var(--color_text_white);
                 font-size: 1rem;
-                text-align: justify;
+                // text-align: justify;
                 font-weight: 700;
                 line-height: 1.3;
             }
@@ -151,7 +151,7 @@
 @media screen and (max-width: 500px) {
     .features {
         &Title {
-            width: 40%;
+            width: 60%;
         }
     }
 }

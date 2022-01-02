@@ -101,7 +101,7 @@ export default class AsNavFor extends Component {
           <div className={style.characterSecondSlider}>
                 <div className={style.characterSecondSliderTitle}>
                     <h2>Sniper</h2>
-                    <span>He is rumored to be a ghost. No one has ever seen him, and no one wants to be his enemy because you will never know when he's gonna get you. His targets never survive, but the witnesses said there was a whistle before the kill.</span>
+                    <span>No one has ever seen him, and no one wants to be his enemy because you will never know when he's gonna get you. His targets never survive, but the witnesses said there was a whistle before the kill.</span>
                 </div>
                 <video src={urlvideo3} autoplay='autoplay' muted='muted' loop='loop'></video>
           </div>
