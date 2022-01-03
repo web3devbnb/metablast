@@ -1,7 +1,7 @@
 
 
 .character{
-    display: none;
+    // display: none;
     position: relative;
     &Container{
         position: absolute;
@@ -68,7 +68,7 @@
 }
 @media screen and (max-width: 500px) {
     .character{
-        display: block;
+        // display: block;
         &title{
             width: 52%;
             top:20px;

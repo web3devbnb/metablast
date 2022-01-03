@@ -114,6 +114,12 @@
     }
 }
 @media screen and (max-width:500px) {
+    .footerMenu{
+        &FAQ ul li,
+        &About ul li{
+           font-size: 15px;
+            }
+        }
     .footerWrapper{
         &Logo {
         width: 80%;

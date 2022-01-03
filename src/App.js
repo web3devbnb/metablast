@@ -4,9 +4,27 @@ import {Vidwrapper,About,Features,Character,CharacterMB,Basecamp,Roadmap,Tokenom
 import Footer from './footer'
 import GlobalStyles from './GlobalStyles'
 import logo from './media/logo-200x200.png'
+import { useEffect,useState} from 'react';
 
 function App() {
-
+  const [show,setShow] = useState(false)
+  const [showMB,setShowMB] = useState(false)
+  useEffect(()=>{
+    const handleResize = ()=>{
+        if(window.innerWidth>500){
+            setShowMB(false)
+            setShow(true)
+        }else{
+            setShowMB(true)
+            setShow(false)
+        }
+    }
+    window.addEventListener('resize',handleResize)
+    //cleanup func
+    return()=>{
+        window.removeEventListener('resize',handleResize)
+    }
+  })
   return (
     <GlobalStyles>
           <Header/>
@@ -14,8 +32,8 @@ function App() {
           <About/>
           <Features/>
           <NFTsItem/>
-          <Character/>
-          <CharacterMB/>
+          {show &&<Character/>}
+          {showMB &&<CharacterMB/>}
           <Basecamp/>
           <Roadmap/>
           <Tokenomics/>
