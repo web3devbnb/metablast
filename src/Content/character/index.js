@@ -6,14 +6,14 @@ import urlvideo5 from "../../media/0005.mp4"
 import urlvideo6 from "../../media/0006.mp4"
 import urlvideo7 from "../../media/0007.mp4"
 // import urlgif from "../../media/1-unscreen.gif"
-import url1 from "../../media/Gunner.png"
 // import url1 from "../../media/1.png"
-import url2 from "../../media/Scout.png"
-import url3 from "../../media/Sniper.png"
-import url4 from "../../media/Special_force.png"
-import url5 from "../../media/Picture1.png"
-import url6 from "../../media/Medic.png"
-import url7 from "../../media/Officer.png"
+// import url1 from "../../media/Gunner.png"
+// import url2 from "../../media/Scout.png"
+// import url3 from "../../media/Sniper.png"
+// import url4 from "../../media/Special_force.png"
+// import url5 from "../../media/Picture1.png"
+// import url6 from "../../media/Medic.png"
+// import url7 from "../../media/Officer.png"
 import urlCHARACTER from "../../media/CHARACTER.png"
 import clsx from "clsx"
 import React, { Component } from "react";
@@ -65,12 +65,12 @@ export default class AsNavFor extends Component {
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />
     };
-    const settings2 = {
-      slidesToShow: 7,
-      infinite:true,
-      nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />
-    };
+    // const settings2 = {
+    //   slidesToShow: 7,
+    //   infinite:true,
+    //   nextArrow: <SampleNextArrow />,
+    //   prevArrow: <SamplePrevArrow />
+    // };
     return (
       <section className={style.character} id="character">
         <div className={clsx('container',style.characterContainer)}>
@@ -135,7 +135,7 @@ export default class AsNavFor extends Component {
                 <video src={urlvideo2} autoplay='autoplay' muted='muted' loop='loop'></video>
           </div>
         </Slider>
-        <Slider
+        {/* <Slider
           asNavFor={this.state.nav1}
           ref={slider => (this.slider2 = slider)}
           slidesToShow={4}
@@ -147,7 +147,6 @@ export default class AsNavFor extends Component {
         >
           <div style={{width:'calc(100% / 10 )'}}>
                 <img src={url1} alt=""/>
-               {/* <video src={urlvideo} autoplay='autoplay' muted='muted' loop='loop'></video> */}
           </div>
           <div style={{width:'calc(100% / 10 )'}}>
                 <img src={url2} alt=""/>
@@ -167,7 +166,7 @@ export default class AsNavFor extends Component {
           <div style={{width:'calc(100% / 10 )'}}>
                 <img src={url7} alt=""/>
           </div>
-        </Slider>
+        </Slider> */}
       </section>
     );
   }

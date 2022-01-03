@@ -2,6 +2,7 @@ import Vidwrapper from './vidwrapper'
 import About from './about'
 import Features from './features'
 import Character from './character'
+import CharacterMB from './characterMB'
 import Basecamp from './basecamp'
 import Roadmap from './roadmap'
 import Tokenomics from './tokenomics'
@@ -10,4 +11,4 @@ import Partners from './partners'
 import Investors from './investors'
 import TEAM from './TEAM'
 import NFTsItem from './NFTsItem'
-export  {Vidwrapper,About,Features,Character,Basecamp,Roadmap,Tokenomics,Communities,Partners,Investors,TEAM,NFTsItem}
+export  {Vidwrapper,About,Features,Character,CharacterMB,Basecamp,Roadmap,Tokenomics,Communities,Partners,Investors,TEAM,NFTsItem}

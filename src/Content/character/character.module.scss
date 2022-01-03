@@ -112,6 +112,7 @@
 }
 @media screen and (max-width: 500px) {
     .character{
+        display: none;
         &title{
             width: 30%;
             top:5px;

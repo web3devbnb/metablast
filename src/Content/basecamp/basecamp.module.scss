@@ -2,6 +2,9 @@
     position: relative;
     width: 100%;
     height: 100%;
+    &>img{
+        display: none;
+    };
 }
 .basecampContainer{
     position: absolute;
@@ -27,7 +30,7 @@
         padding: 20px;
         background-color: rgba(0, 0, 0, 0.76);
         border-radius: 20px;
-        text-align: justify;
+        text-align: center;
     }
 }
 
@@ -52,15 +55,27 @@
 }
 
 @media screen and (max-width:500px) {
-    
+    .basecamp {
+        &>img{
+            display: block;
+        }
+        & video{
+            display: none;
+        }
+    }
     .basecampTitle{
-        width: 30%;
-        top: 10px;
+        width: 52%;
+        top: 6px;
         &P{
-            position: relative;
-            width: 100%;
+            // position: relative;
+            top: 15%;
+            left: 45%;
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 12px;
+            width: 85%;
             margin-bottom: 10px;
-            font-weight: 700;
+            font-weight: 500;
         }
     }
     

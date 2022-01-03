@@ -181,6 +181,12 @@ video {
     width: 100%;
     height: 8%;
 }
+.slick-dots{
+    bottom: 20px !important;
+}
+.slick-dots li button:before{
+    font-size:10px;
+}
 // .slick-next{
 //     background-image: url('../media/next.png') !important;
 //     background-position: center right !important;
@@ -197,6 +203,6 @@ video {
 @media screen and (max-width: 1000px) {
     .slick-next,
     .slick-prev{
-        // display: none !important
+        display: none !important
     }
 }
