@@ -70,7 +70,7 @@ function Header(){
                     <ul className={clsx(style.mainMenu,{[style.responsive]:showMB})} id="myTopnav">
                         <li><a href="#features">FEATURES</a></li>
                         {/* <li><a href="#NFTsItem">NFTs Item</a></li> */}
-                        <li><a href="#NFTsItem">NFTsCard</a></li>
+                        <li><a href="#NFTsItem">NFT CARD</a></li>
                         <li><a href="#character">CHARACTER</a></li>
                         <li><a href="#roadmap">ROADMAP</a></li>
                         <li><a href="#tokenomics">TOKENOMICS</a></li>

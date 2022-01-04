@@ -14,14 +14,18 @@
     }
     &Wrapper {
         &Top{
-            max-width: 1500px;
             margin: auto;
-            display: grid;
-            gap: 5%;
-            grid-template-columns: repeat(auto-fit, minmax(calc(360px - 5%), calc(770px - 5%)));
-            justify-content: center;
+            // display: grid;
+            // gap: 5%;
+            // grid-template-columns: repeat(auto-fit, minmax(calc(360px - 5%), calc(770px - 5%)));
+            // justify-content: center;
+            display: flex;
             margin-bottom: 5%;
+            justify-content: center;
+            flex-wrap: wrap;
             &Item {
+                width: 30%;
+                min-width: 570px;
                 text-align: center;
                 display: flex;
                 &Top {
@@ -44,8 +48,9 @@
                         margin-bottom: 25px;
                     }
                     & .background{
-                        font-size: 19px;
-                        font-weight: 300;
+                        font-size: 18px;
+                        font-weight: 200;
+                        line-height: 1.2;
                         color: var(--color_text_white);
                     }
                 }
@@ -54,12 +59,22 @@
         &Bottom{
             max-width: 1500px;
             margin: auto;
-            display: grid;
-            gap: 5%;
-            grid-template-columns: repeat(auto-fit, minmax(calc(300px - 10%), calc(350px - 10%)));
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            // display: grid;
+            // gap: 5%;
+            // grid-template-columns: repeat(auto-fit, minmax(calc(300px - 10%), calc(350px - 10%)));
+            // justify-content: center;
             margin-bottom: 10%;
-            &ItemBottom {
+            &Item{
+                width: 20%;
+                min-width: 250px;
+                &Top{
+                    width: 80%;
+                    margin: auto;
+                }
+                &Bottom {
                     margin-top: 1rem;
                     text-align: left;
                     // padding-left: 20px;
@@ -75,38 +90,39 @@
                         font-style: italic;
                     }
             }
+            }
         }
     }
         
 }
 
-@media screen and (max-width: 1352px) {
-    .Advisors {
-        &Wrapper {
-            &Top {
-            margin-bottom: 25%;
-            }
-        }
-    }
-}
+// @media screen and (max-width: 1352px) {
+//     .Advisors {
+//         &Wrapper {
+//             &Top {
+//             margin-bottom: 25%;
+//             }
+//         }
+//     }
+// }
 
-@media screen and (max-width: 1025px) {
-    .Advisors {
-        &Wrapper{
-            &Top ,&Bottom {
-            margin-bottom: 45%;
-            }
-        }
-    }
-}
+// @media screen and (max-width: 1025px) {
+//     .Advisors {
+//         &Wrapper{
+//             &Top ,&Bottom {
+//             margin-bottom: 45%;
+//             }
+//         }
+//     }
+// }
 
-@media screen and (max-width: 785px) {
-    .Advisors {
-        &Wrapper {
-            margin-bottom: 70%;
-        }
-    }
-}
+// @media screen and (max-width: 785px) {
+//     .Advisors {
+//         &Wrapper {
+//             margin-bottom: 70%;
+//         }
+//     }
+// }
 
 @media screen and (max-width: 685px) {
     .Advisors {
@@ -116,7 +132,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .Advisors {
         &Title {
             width: 60%;
@@ -125,6 +141,8 @@
             gap: 1%;
             &Item{
                 flex-direction:column;
+                width: 100%;
+                min-width: auto;
                 &Top{
                     width: 80%;
                     margin: auto;
@@ -137,6 +155,9 @@
         }
         &WrapperBottom{
             gap: 1%;
+            &Item{
+                width: 80%;
+            }
         }
     }
 }

@@ -67,7 +67,7 @@ function Advisors(){
                             2+ years experience as Blockchain Developer</div>
                         </div>
                     </div>
-                    <div className={style.AdvisorsWrapperTopItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="200">
+                    {/* <div className={style.AdvisorsWrapperTopItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="200">
                         <div className={style.AdvisorsWrapperTopItemTop}>
                             <img src={urlImgCUONG} alt=""/>
                         </div>
@@ -80,7 +80,7 @@ function Advisors(){
                             10+ years of experience in operating game products<br></br><br></br>
                             4+ years of experience in designing game products at top Vietnam Game Publishers: VNG Corporation, Mobile Entertainment Corporation, Amanotes, Wolffun, etc.</div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className={style.AdvisorsWrapperBottom}>
                     <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="400">
