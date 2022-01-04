@@ -1,6 +1,6 @@
 import urlImgPHU from '../../media/PHU.png'
 import urlImgHO from '../../media/HO-ANH.png'
-import urlImgCUONG from '../../media/CUONG.png'
+import urlImgVU from '../../media/DUONG.png'
 import urlImgTAN from '../../media/TAN.png'
 import urlImgAN from '../../media/AN.png'
 import urlImgTHIEN from '../../media/THIEN.png'
@@ -69,11 +69,11 @@ function Advisors(){
                     </div>
                     {/* <div className={style.AdvisorsWrapperTopItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="200">
                         <div className={style.AdvisorsWrapperTopItemTop}>
-                            <img src={urlImgCUONG} alt=""/>
+                            <img src={urlImgVU} alt=""/>
                         </div>
                         <div className={style.AdvisorsWrapperTopItemBottom}>
                             <div className={style.name}>
-                                <h5>Cuong Nguyen</h5>
+                                <h5>Duong Vu</h5>
                             </div>
                             <div className={style.position}>Product Lead/Game Designer</div>
                             <div class={style.background}>

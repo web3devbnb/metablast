@@ -7,7 +7,7 @@ import logo from './media/logo-200x200.png'
 import { useEffect,useState} from 'react';
 
 function App() {
-  const [show,setShow] = useState(false)
+  const [show,setShow] = useState(true)
   const [showMB,setShowMB] = useState(false)
   useEffect(()=>{
     const handleResize = ()=>{
@@ -19,12 +19,12 @@ function App() {
             setShow(false)
         }
     }
-    window.addEventListener('resize',handleResize)
+    window.addEventListener('scroll',handleResize)
     //cleanup func
     return()=>{
-        window.removeEventListener('resize',handleResize)
+        window.removeEventListener('scroll',handleResize)
     }
-  })
+  },[])
   return (
     <GlobalStyles>
           <Header/>
