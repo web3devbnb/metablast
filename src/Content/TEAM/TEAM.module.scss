@@ -24,7 +24,7 @@
             justify-content: center;
             flex-wrap: wrap;
             &Item {
-                width: 30%;
+                width: 35%;
                 min-width: 570px;
                 text-align: center;
                 display: flex;
@@ -42,13 +42,13 @@
                         margin-bottom: 5px;
                     }
                     & .position{
-                        font-size: 16px;
+                        font-size: 18px;
                         color: var(--color_text_white);
                         font-style: italic;
                         margin-bottom: 25px;
                     }
                     & .background{
-                        font-size: 18px;
+                        font-size: 19px;
                         font-weight: 200;
                         line-height: 1.2;
                         color: var(--color_text_white);

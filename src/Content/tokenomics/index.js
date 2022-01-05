@@ -20,9 +20,9 @@ function Tokenomics(){
                         <p>Total Supply: <span>200,000,000 $MTG</span> </p>
                         <ul className={style.tokenomicsWrapperContentList}>
                             <li><span>Private Round:</span><span>15%</span></li>
-                            <li><span>Public Round:</span><span>3%</span></li>
+                            <li><span>Public Round:</span><span>1%</span></li>
                             <li><span>Team:</span><span>15%</span></li>
-                            <li><span>Advisors & Partners:</span><span>5%</span></li>
+                            <li><span>Advisors & Partners:</span><span>7%</span></li>
                             <li><span>Liquidity:</span><span>10%</span></li>
                             <li><span>Marketing:</span><span>13%</span></li>
                             <li><span>Ecosystem:</span><span>39%</span></li>

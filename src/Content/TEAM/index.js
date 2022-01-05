@@ -1,6 +1,6 @@
 import urlImgPHU from '../../media/PHU.png'
 import urlImgHO from '../../media/HO-ANH.png'
-import urlImgVU from '../../media/DUONG.png'
+import urlImgDUONG from '../../media/DUONG.png'
 import urlImgTAN from '../../media/TAN.png'
 import urlImgAN from '../../media/AN.png'
 import urlImgTHIEN from '../../media/THIEN.png'
@@ -67,9 +67,9 @@ function Advisors(){
                             2+ years experience as Blockchain Developer</div>
                         </div>
                     </div>
-                    {/* <div className={style.AdvisorsWrapperTopItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="200">
+                    <div className={style.AdvisorsWrapperTopItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="200">
                         <div className={style.AdvisorsWrapperTopItemTop}>
-                            <img src={urlImgVU} alt=""/>
+                            <img src={urlImgDUONG} alt=""/>
                         </div>
                         <div className={style.AdvisorsWrapperTopItemBottom}>
                             <div className={style.name}>
@@ -77,10 +77,11 @@ function Advisors(){
                             </div>
                             <div className={style.position}>Product Lead/Game Designer</div>
                             <div class={style.background}>
-                            10+ years of experience in operating game products<br></br><br></br>
-                            4+ years of experience in designing game products at top Vietnam Game Publishers: VNG Corporation, Mobile Entertainment Corporation, Amanotes, Wolffun, etc.</div>
+                            Chief Technology Officer of BEUS
+                            7+ years of experience in software engineering in top Japan software companies: Rakuten Seimei Kikan, Sony Mobile Communications, Luvna.<br></br><br></br>
+                            5+ years of experience managing software product outsourcing globally, especially in Japan.</div>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
                 <div className={style.AdvisorsWrapperBottom}>
                     <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="400">
