@@ -35,6 +35,9 @@ function Header(){
         }
 
     })
+        const handleScrollTop = () =>{
+            window.scrollTo(0, 0)
+            };
     // useEffect(()=>{
     //     const handleResize = ()=>{
     //         if(window.innerWidth>1000){
@@ -63,13 +66,12 @@ function Header(){
         <header className={clsx(style.header,{[style.headerDown]:show})} id='navbar'>
         <div className={clsx(style.headerContainer,{[style.headerContainerDown]:show})} id='navbarContainer'>
             <div className={style.headerContainerLogo}>
-                <img src={urlLogo} alt="logo"/>
+                <img src={urlLogo} alt="logo" onClick={handleScrollTop}/>
             </div>
             <div className={clsx(style.headerContainerMenu,{[style.display_block]:showMB})}>
                 <nav>
                     <ul className={clsx(style.mainMenu,{[style.responsive]:showMB})} id="myTopnav">
                         <li><a href="#features">FEATURES</a></li>
-                        {/* <li><a href="#NFTsItem">NFTs Item</a></li> */}
                         <li><a href="#NFTsItem">NFT CARD</a></li>
                         <li><a href="#character">CHARACTER</a></li>
                         <li><a href="#roadmap">ROADMAP</a></li>

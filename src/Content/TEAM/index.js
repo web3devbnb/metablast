@@ -67,6 +67,7 @@ function Advisors(){
                             2+ years experience as Blockchain Developer</div>
                         </div>
                     </div>
+                    
                     <div className={style.AdvisorsWrapperTopItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="200">
                         <div className={style.AdvisorsWrapperTopItemTop}>
                             <img src={urlImgDUONG} alt=""/>
@@ -78,7 +79,7 @@ function Advisors(){
                             <div className={style.position}>Product Lead/Game Designer</div>
                             <div class={style.background}>
                             Chief Technology Officer of BEUS <br></br><br></br>
-                            Game Designer at X-Game <br></br><br></br>
+                            Senior Game Developer at X-Game <br></br><br></br>
                             7+ years of experience in software engineering in top Japan software companies: Rakuten Seimei Kikan, Sony Mobile Communications, Luvna.<br></br><br></br>
                             5+ years of experience managing software product outsourcing globally, especially in Japan.</div>
                         </div>

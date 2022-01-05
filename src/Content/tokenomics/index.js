@@ -7,7 +7,7 @@ function Tokenomics(){
         <section className={style.tokenomics} id='tokenomics'>
             <div className='container'>
                 <div className={style.tokenomicsWrapper}>
-                    <div className={style.tokenomicsWrapperTitle}>
+                <div className={style.tokenomicsWrapperTitle}>
                         <img src={urlTitle} alt=""/>
                     </div>
                     <div className={style.tokenomicsWrapperImg} data-aos="fade-up-right" data-aos-once="true" data-aos-delay="300">

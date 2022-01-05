@@ -36,6 +36,7 @@ function Footer(){
                     <h2>ABOUT</h2>
                     <ul>
                         <li><a href="#features">FEATURES</a></li>
+                        <li><a href="#NFTsItem">NFT CARD</a></li>
                         <li><a href="#character">CHARACTER</a></li>
                         <li><a href="#roadmap">ROADMAP</a></li>
                         <li><a href="#tokenomics">TOKENOMICS</a></li>
