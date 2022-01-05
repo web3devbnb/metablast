@@ -77,7 +77,8 @@ function Advisors(){
                             </div>
                             <div className={style.position}>Product Lead/Game Designer</div>
                             <div class={style.background}>
-                            Chief Technology Officer of BEUS
+                            Chief Technology Officer of BEUS <br></br><br></br>
+                            Game Designer at X-Game <br></br><br></br>
                             7+ years of experience in software engineering in top Japan software companies: Rakuten Seimei Kikan, Sony Mobile Communications, Luvna.<br></br><br></br>
                             5+ years of experience managing software product outsourcing globally, especially in Japan.</div>
                         </div>
