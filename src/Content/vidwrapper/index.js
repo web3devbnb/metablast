@@ -42,7 +42,7 @@ function Vidwrapper(){
         <section className={style.Vidwrapper} id='vidwrapper'>
             {/* <video src={urlvideo} autoplay='autoplay' muted='muted' loop='loop' className='image1'></video> */}
             <div className={style.banner_PC}>
-            <img src={urlimg1} className='image1' alt="" style={{width:'110%',marginLeft:'-5%'}}/>
+            <img src={urlimg1} className='image1' data-value="5" alt="" alt="" style={{width:'110%',marginLeft:'-5%'}}/>
             <img src={urlimg2} className='image2' data-value="5" alt=""  style={{width:'110%',top:'50px',marginLeft:'-5%'}}/>
             <img src={urlimg3} className='image3' data-value="5" alt=""  style={{width:'100%'}}/>
             <img src={urlimg4} className='image4' data-value="5" alt="" style={{width:'100%',top:'50px',marginLeft:'3.5%'}}/>
