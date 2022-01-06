@@ -1,5 +1,5 @@
-import urlImg from '../../media/tokenomics.25d3c6dd.png'
-import urlTitle from '../../media/Tokenomics.png'
+import urlImg from '../../media/tokenomics.25d3c6dd.webp'
+import urlTitle from '../../media/Tokenomics.webp'
 import style from './tokenomics.module.scss'
 
 function Tokenomics(){

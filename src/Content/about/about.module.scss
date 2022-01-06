@@ -7,7 +7,7 @@
     z-index: 0;
 }
 .about {
-    // background-image: url(../../media/banner-9.png);
+    // background-image: url(../../media/banner-9.webp);
     // background-position: center right;
     // background-repeat: no-repeat;
     // background-size: cover;
@@ -85,7 +85,7 @@
 }
 @media screen and (max-width: 500px) {
     .imgBg{
-        content: url(../../media/banner-9-mb.png);
+        content: url(../../media/banner-9-mb.webp);
     }
     .about {
         margin-top: -20px;

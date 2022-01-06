@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import style from './about.module.scss'
 import clsx from 'clsx'
-import urlimg5 from '../../media/metagunner-namngang.png'
-import urlImgBg from '../../media/banner-9.png'
+import urlimg5 from '../../media/metagunner-namngang.webp'
+import urlImgBg from '../../media/banner-9.webp'
 
 function About(){
     useEffect(()=>{

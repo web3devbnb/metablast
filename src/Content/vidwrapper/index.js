@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
 // import urlvideo from '../../media/metagunner_clip_banner.mp4'
-// import urlLogo from '../../media/Logo.png'
-import urlimg1 from '../../media/layer1.png'
-import urlimg2 from '../../media/layer2.png'
-import urlimg3 from '../../media/layer3.png'
-import urlimg4 from '../../media/layer4.png'
-import urlimgmb from '../../media/metagunner_banner_500.png'
+// import urlLogo from '../../media/Logo.webp'
+import urlimg1 from '../../media/layer1.webp'
+import urlimg2 from '../../media/layer2.webp'
+import urlimg3 from '../../media/layer3.webp'
+import urlimg4 from '../../media/layer4.webp'
+import urlimgmb from '../../media/metagunner_banner_500.webp'
 import style from './vidwrapper.module.scss'
 
 function Vidwrapper(){

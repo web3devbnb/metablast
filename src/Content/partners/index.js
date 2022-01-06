@@ -1,9 +1,9 @@
-// import imgilluvium from '../../media/illuvium.1b3b3e99.png'
-// import imggamefi from '../../media/gamefi.f1bea293.png'
-// import imgderace from '../../media/derace.ce76ce89.png'
-// import imgoracles from '../../media/supra-oracles.0bd69769.png'
-// import imgfinance from '../../media/scv-finance.4edd06dd.png'
-// import imgtalken from '../../media/talken.aa70fb6f.png'
+// import imgilluvium from '../../media/illuvium.1b3b3e99.webp'
+// import imggamefi from '../../media/gamefi.f1bea293.webp'
+// import imgderace from '../../media/derace.ce76ce89.webp'
+// import imgoracles from '../../media/supra-oracles.0bd69769.webp'
+// import imgfinance from '../../media/scv-finance.4edd06dd.webp'
+// import imgtalken from '../../media/talken.aa70fb6f.webp'
 import style from './partners.module.scss'
 
 function Partners(){

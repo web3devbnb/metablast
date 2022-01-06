@@ -1,10 +1,10 @@
-// import imgSC from '../../media/standard-crypto.95688a10.png'
-// import imgRC from '../../media/raptor-capital.152fe148.png'
-// import imgIL from '../../media/icetea-labs.38a1c529.png'
-// import imgEC from '../../media/everse-capital.f1830d8c.png'
-// import imgMagnus from '../../media/magnus-capital.027e1ec0.png'
-// import imgX21 from '../../media/x21.6cb4d9a9.png'
-// import imgMC from '../../media/metrix-capital.60512ea7.png'
+// import imgSC from '../../media/standard-crypto.95688a10.webp'
+// import imgRC from '../../media/raptor-capital.152fe148.webp'
+// import imgIL from '../../media/icetea-labs.38a1c529.webp'
+// import imgEC from '../../media/everse-capital.f1830d8c.webp'
+// import imgMagnus from '../../media/magnus-capital.027e1ec0.webp'
+// import imgX21 from '../../media/x21.6cb4d9a9.webp'
+// import imgMC from '../../media/metrix-capital.60512ea7.webp'
 
 
 import style from './investors.module.scss'

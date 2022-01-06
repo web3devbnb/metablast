@@ -3,7 +3,7 @@
 // import urlImgTwitter from '../../media/telegram.svg'
 // import urlImgGithub from '../../media/telegram.svg'
 // import urlImgMedium from '../../media/telegram.svg'
-// import urlImgBG from '../../media/communities.8a3fa910.png'
+// import urlImgBG from '../../media/communities.8a3fa910.webp'
 
 
 import style from  './communities.module.scss'

@@ -1,4 +1,4 @@
-import imgLogo from '../media/Logo.png'
+import imgLogo from '../media/Logo.webp'
 import imgTelegram from '../media/telegram.svg'
 import imgDiscord from '../media/discord.svg'
 import imgTwitter from '../media/twitter.svg'

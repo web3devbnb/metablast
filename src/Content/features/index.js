@@ -1,8 +1,8 @@
-import urlFEATURES from '../../media/GAME-FEATURES.png'
-import urlImgCam from '../../media/CampaignMode.jpg'
-import urlImgArena from '../../media/Arena_Mode.jpg'
-import urlImgUpgrade from '../../media/FEATURES4.jpg'
-import urlImgRank from '../../media/RANKING.png'
+import urlFEATURES from '../../media/GAME-FEATURES.webp'
+import urlImgCam from '../../media/CampaignMode.webp'
+import urlImgArena from '../../media/Arena_Mode.webp'
+import urlImgUpgrade from '../../media/FEATURES4.webp'
+import urlImgRank from '../../media/RANKING.webp'
 import style from './features.module.scss'
 import clsx from 'clsx'
 
